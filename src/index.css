@@ -20,3 +20,18 @@ code {
 * {
   font-family: 'Segoe UI';
 }
+
+/* Landing page */
+.landing__textbox {
+  font-size: 60px;
+  margin-top: 10%;
+  margin-left: 40px;
+  margin-right: 20%;
+}
+
+.nav__button {
+  position: fixed;
+  top: 5%;
+  right: 0px;
+  width: 300px;
+}

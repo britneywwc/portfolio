@@ -5,14 +5,41 @@ import Landing from '../pages/Landing';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
 
+import {Link, Element, animateScroll as scroll} from "react-scroll";
+import { Button } from '@mui/material';
+
+
 const Routing = () => {
     return (
-        <Routes>
-            <Route exact path="/" element={<Landing/>}/>    
-            <Route exact path="/projects" element={<Projects />}/>
-            <Route exact path="/contact" element={<Contact />}/>
-            <Route exact path="*" element={<Error/>}/>            
-        </Routes>
+        <div>
+            <div className="nav__button">
+                <Button variant="text">
+                    <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500} >Home</Link>
+                </Button>
+
+                <Button variant="text">
+                    <Link activeClass="active" className="projects" to="projects" spy={true} smooth={true} duration={1000} >Projects</Link>
+                </Button>
+
+                <Button variant="text">
+                    <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={1000} >Contact</Link>
+                </Button>
+            </div>
+
+                <div className="content">
+                    <Element name="home" className="element" >
+                        <Landing/>
+                    </Element>
+
+                    <Element name="projects" className="element">
+                        <Landing/>
+                    </Element>
+
+                    <Element name="contact" className="element">
+                        <Landing/>
+                    </Element>
+                </div>            
+        </div>
 
     )
 }
