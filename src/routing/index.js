@@ -1,29 +1,28 @@
 import React from 'react'
-import {Routes, Route} from 'react-router-dom'
 import Error from '../pages/Error';
 import Landing from '../pages/Landing';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
 
 import {Link, Element, animateScroll as scroll} from "react-scroll";
-import { Button } from '@mui/material';
+import NavButton from '../components/NavButton';
 
 
 const Routing = () => {
     return (
         <div>
-            <div className="nav__button">
-                <Button variant="text">
-                    <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500} >Home</Link>
-                </Button>
+            <div className="nav__header">
+                <NavButton>
+                    <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}>HOME</Link>
+                </NavButton>
 
-                <Button variant="text">
-                    <Link activeClass="active" className="projects" to="projects" spy={true} smooth={true} duration={1000} >Projects</Link>
-                </Button>
+                <NavButton>
+                    <Link activeClass="active" className="projects" to="projects" spy={true} smooth={true} duration={1000}>PROJECTS</Link>
+                </NavButton>
 
-                <Button variant="text">
-                    <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={1000} >Contact</Link>
-                </Button>
+                <NavButton>
+                    <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={1000}>CONTACT</Link>
+                </NavButton>
             </div>
 
                 <div className="content">

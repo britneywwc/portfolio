@@ -21,23 +21,54 @@ code {
   font-family: 'Segoe UI';
 }
 
-/* Landing page */
-.landing__textbox {
-  font-size: 60px;
-  margin-top: 10%;
-  margin-left: 40px;
-  margin-right: 20%;
+/* Nav */
+.nav__header {
+  position: fixed;
+  top: 5%;
+  right: 0;
+  width: 25%;
 }
 
 .nav__button {
-  position: fixed;
-  top: 5%;
-  right: 0px;
-  width: 300px;
+  font-family: 'Arial';
+  background-color: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 4px;
+  cursor: pointer;
+  border-radius: 40px;
+  border-color: black;
+  border-width: 1px;
 }
 
+.nav__button:hover {
+  background: black;
+  color: white;
+}
+
+/* Landing page */
 #page {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+.landing__textbox {
+  font-size: 60px;
+  margin-top: 20%;
+  margin-left: 5%;
+  margin-right: 20%;
+  width: 100%;
+  height: 100%;
+}
+
+.landing__textbox img {
+  width: auto;
+  height: 6%;
+}
+
+
+
+
