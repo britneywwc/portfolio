@@ -32,11 +32,11 @@ const Routing = () => {
                     </Element>
 
                     <Element name="projects" className="element">
-                        <Landing/>
+                        <Projects/>
                     </Element>
 
                     <Element name="contact" className="element">
-                        <Landing/>
+                        <Contact/>
                     </Element>
                 </div>            
         </div>

@@ -35,3 +35,9 @@ code {
   right: 0px;
   width: 300px;
 }
+
+#page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

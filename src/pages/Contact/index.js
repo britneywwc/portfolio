@@ -2,8 +2,11 @@ import React from "react";
 
 const Contact = (props) => {
     return (
-        <div>
-            Contact page example
+        <div id="page">
+
+            <div className="landing__textbox">
+                Contact page example
+            </div>
         </div>
     )
 }
