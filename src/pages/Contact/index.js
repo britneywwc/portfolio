@@ -67,7 +67,7 @@ const Contact = (props) => {
                 
                 <a href={resumePDF} download="britney-resume.pdf">
 
-                <img className="textbox__icon" src={cvIcon} alt="cv icon"/></a>
+                <img src={cvIcon} alt="cv icon"/></a>
 
 
 

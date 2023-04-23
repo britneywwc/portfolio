@@ -22,12 +22,12 @@ const LandingPage = (props) => {
 
                  &nbsp;+ SOFTWARE DEVELOPMENT. &nbsp;             
 
-                <span>
+                {/* <span>
                     <img src={globeIcon} alt="globe icon"/>
-                </span>
+                </span> */}
 
                 <br/><br/>
-                I WORK WITH <img src={reactIcon} alt="react icon"/> REACT, PYTHON + TYPESCRIPT. 
+                I WORK WITH <img src={reactIcon} alt="react icon"/> REACTJS, PYTHON + TYPESCRIPT. 
             </div>
         </div>
 

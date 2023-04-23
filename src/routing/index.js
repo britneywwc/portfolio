@@ -6,27 +6,40 @@ import Contact from '../pages/Contact';
 import NavHeader from '../components/NavHeader';
 
 import {Element, animateScroll as scroll} from "react-scroll";
+import Box from '@mui/material/Box';
 
 
 const Routing = () => {
     return (
-        <div>
+        <Box sx={{width: '100%'}}>
             <NavHeader/>
+
             
-            <div>
+            <Box sx={{height: '130vh'}}>
+
                 <Element name="home" className="element" >
                     <Landing/>
                 </Element>
+            </Box>
 
+            <Box sx={{height: '130vh'}}>
                 <Element name="projects" className="element">
                     <Projects/>
                 </Element>
-
+            </Box>
+            
+            <Box 
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                minHeight="100vh">
                 <Element name="contact" className="element">
                     <Contact/>
                 </Element>
-            </div>            
-        </div>
+            </Box>
+        
+          
+        </Box>
 
     )
 }
