@@ -13,7 +13,7 @@ const Routing = () => {
         <div>
             <NavHeader/>
             
-            <div className="content">
+            <div>
                 <Element name="home" className="element" >
                     <Landing/>
                 </Element>

@@ -13,7 +13,7 @@ const NavHeader = () => {
         palette: {
             primary: {
                 main: "#000",
-                secondary: "#fff",
+                secondary: "#f5ebe0",
             }
         },
         });
