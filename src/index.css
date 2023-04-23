@@ -109,7 +109,6 @@ code {
 .landing__textbox img {
   width: auto;
   height: 4vw;
-  /* display: flex; */
   vertical-align: bottom;
   align-items: center;
   white-space: nowrap;
@@ -131,7 +130,7 @@ code {
 /* Contact page */
 .contact__textbox {
     font-family: 'Migra';
-    font-style: italic;
+    font-style: normal;
     font-size: 3vw;
     max-height: 50%;
     max-width: 80%;

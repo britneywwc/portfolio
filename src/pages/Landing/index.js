@@ -1,13 +1,11 @@
 import React from "react";
 import globeIcon from "../../assets/globe.png";
-import reactIcon from '../../assets/react-logo.gif'
-import Container from '@mui/material/Container';
+import reactIcon from '../../assets/react-logo.gif';
 
 
 const LandingPage = (props) => {
     return (
         <div id="page">
-        <Container>
             <div className="landing__textbox">
                 HI. I AM A &nbsp;
 
@@ -31,7 +29,6 @@ const LandingPage = (props) => {
                 <br/><br/>
                 I WORK WITH <img src={reactIcon} alt="react icon"/> REACT, PYTHON + TYPESCRIPT. 
             </div>
-            </Container>
         </div>
 
         
