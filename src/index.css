@@ -21,32 +21,6 @@ code {
   font-family: 'Segoe UI';
 }
 
-/* Nav */
-.nav__header {
-  position: fixed;
-  top: 5%;
-  right: 0;
-  width: 25%;
-}
-
-.nav__button {
-  font-family: 'Arial';
-  background-color: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: center;
-  display: inline-block;
-  margin: 4px 4px;
-  cursor: pointer;
-  border-radius: 40px;
-  border-color: black;
-  border-width: 1px;
-}
-
-.nav__button:hover {
-  background: black;
-  color: white;
-}
 
 /* Landing page */
 #page {
