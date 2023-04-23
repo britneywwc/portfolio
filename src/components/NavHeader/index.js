@@ -1,12 +1,11 @@
 import React from "react";
 import {Link} from "react-scroll";
 
+
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
-
-
 
 
 const NavHeader = () => {
@@ -20,6 +19,7 @@ const NavHeader = () => {
         });
 
     const StyledButton = styled(Button)(({ theme }) => ({
+        fontFamily: 'PierSans',
         borderRadius: 28,
         backgroundColor: theme.palette.primary.secondary,
         ':hover': {
@@ -30,7 +30,7 @@ const NavHeader = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Stack direction="row" spacing={4} justifyContent="flex-end">
+            <Stack direction="row" spacing={1} justifyContent="flex-end">
                 <Box sx={{ '& > :not(style)': { m: 1 }, marginTop: '1%', marginRight: '1%', position: 'fixed' }}>
                     <StyledButton
                         variant="outlined" 
