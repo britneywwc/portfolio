@@ -6,7 +6,7 @@ const LandingPage = (props) => {
     return (
         <div id="page">
             <div className="landing__textbox">
-                HI. I AM A &nbsp;
+                HI, I AM A &nbsp;
 
                 <span className="landing__underline">
                     SOFTWARE ENGINEER

@@ -95,6 +95,13 @@ code {
   margin: auto 0;
 }
 
+.curvedtext {
+  font-family: 'PierSans';
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
 .landing__textbox {
   font-family: 'Mondwest';
   font-size: 4em;
@@ -126,12 +133,13 @@ code {
 }
 
 /* Contact page */
+/*  get new font for contact page! */
 .contact__textbox {
     font-family: 'Migra';
     font-style: normal;
     font-size: 3em;
     text-align: center;
-    
+    letter-spacing: 3px;
 }
 
 .contact__container img{

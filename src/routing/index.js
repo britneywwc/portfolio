@@ -4,16 +4,18 @@ import Landing from '../pages/Landing';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
 import NavHeader from '../components/NavHeader';
+import CurvedText from '../components/CurvedText';
 
 import {Element, animateScroll as scroll} from "react-scroll";
 import Box from '@mui/material/Box';
+
 
 
 const Routing = () => {
     return (
         <Box sx={{width: '100%'}}>
             <NavHeader/>
-
+            <CurvedText/>
             
             <Box sx={{height: '130vh'}}>
 
