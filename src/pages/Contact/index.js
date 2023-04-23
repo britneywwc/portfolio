@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Tooltip from '@mui/material/Tooltip';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import Fade from '@mui/material/Fade';
 
-import linkedInIcon from '../../assets/linkedin-icon.png';
-import githubIcon from '../../assets/github-icon.png';
-import emailIcon from '../../assets/email-icon.png';
-import cvIcon from '../../assets/cv-icon.png';
-import resumePDF from '../../assets/britney-resume.pdf';
+import linkedInIcon from '../../assets/icons/linkedin-icon.png';
+import githubIcon from '../../assets/icons/github-icon.png';
+import emailIcon from '../../assets/icons/email-icon.png';
+import cvIcon from '../../assets/icons/cv-icon.png';
+import resumePDF from '../../assets/resume/britney-resume.pdf';
 
 const Contact = (props) => {
     const email = "britneywwc@gmail.com";
@@ -67,7 +67,7 @@ const Contact = (props) => {
                 
                 <a href={resumePDF} download="britney-resume.pdf">
 
-                <img src={cvIcon} alt="cv icon"/></a>
+                <img className="contact__icon"src={cvIcon} alt="cv icon"/></a>
 
 
 

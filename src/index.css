@@ -109,7 +109,8 @@ code {
 
 .landing__textbox img {
   width: 1em;
-  align-items: center;
+  vertical-align: middle;
+  padding-bottom: 0.1em;
 }
 
 .landing__highlight {
@@ -133,11 +134,20 @@ code {
     
 }
 
-/* Fix icon height */
-.contact__textbox img{
+.contact__container img{
   max-height: 1em;
-  padding: 0px 10px;
+  padding: 7px 10px;
 }
+
+.contact__icon {
+  width: 1em;      
+  padding: 0px 10px;
+  vertical-align: middle;
+  /* width: 0.8em */
+  /* padding-bottom: 0.1em; */
+  
+}
+
 
 
 

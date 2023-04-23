@@ -1,6 +1,5 @@
 import React from "react";
-import globeIcon from "../../assets/globe.png";
-import reactIcon from '../../assets/react-logo.gif';
+import reactIcon from '../../assets/icons/react-logo.gif';
 
 
 const LandingPage = (props) => {
@@ -21,11 +20,7 @@ const LandingPage = (props) => {
                  </span>
 
                  &nbsp;+ SOFTWARE DEVELOPMENT. &nbsp;             
-
-                {/* <span>
-                    <img src={globeIcon} alt="globe icon"/>
-                </span> */}
-
+                 
                 <br/><br/>
                 I WORK WITH <img src={reactIcon} alt="react icon"/> REACTJS, PYTHON + TYPESCRIPT. 
             </div>
