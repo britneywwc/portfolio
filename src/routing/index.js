@@ -14,10 +14,9 @@ const Routing = () => {
     return (
         <Box sx={{width: '100%'}}>
             <NavHeader/>
-            <CurvedText/>
+            {/* <CurvedText/> */}
             
             <Box sx={{height: '130vh'}}>
-
                 <Element name="home" className="element" >
                     <Landing/>
                 </Element>

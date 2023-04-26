@@ -1,0 +1,9 @@
+[
+    {
+        "id": 1,
+        "title": "CURIFY",
+        "image": ["../projects/p1/landing.png", "../projects/p1/moodpick.png", "../projects/p1/playlistpick.png", "../projects/p1/results.png"],
+        "description": "A chat bot of Michael Scott from The Office. Ask him anything (paper or non-paper related) or just have a casual chat with him. Integrated OpenAI’s GPT-3 to generate responses and developed a chrome extension for the chatbot.",
+        "stack": "ReactJS, Railway, Spotify API"
+    }
+]

@@ -21,7 +21,8 @@ const NavHeader = () => {
     const StyledButton = styled(Button)(({ theme }) => ({
         fontFamily: 'PierSans',
         borderRadius: 28,
-        backgroundColor: theme.palette.primary.secondary,
+        backgroundColor: 'transparent',
+        zIndex: 1,
         ':hover': {
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.primary.secondary,

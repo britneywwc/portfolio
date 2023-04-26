@@ -133,6 +133,56 @@ code {
 
 }
 
+/* Projects page */
+#page__projects {
+  height: 100%;
+  width: 100%;
+  display: 'flex';
+  flex-direction: column;
+  z-index: -1;
+}
+
+.project__title__h1 {
+  z-index: -1;
+  font-family: 'PierSans';
+  font-style: 'normal';
+  font-size: 2em;
+  position: relative;
+  left: 0;
+  text-align: left;
+  padding-left: 1em;
+  padding-top: 1em;
+  
+}
+
+.project__title__h1__sub {
+  font-family: 'Migra';
+  font-style: normal;
+}
+
+.project__card__title__number {
+  font-family: 'Migra';
+  font-size: .4em;
+  padding: 2em;
+}
+
+.project__card__title__text {
+  font-family: 'Migra';
+  font-weight: normal;
+  font-size: 4.5em;
+  position: absolute;
+  right: 0;
+  padding-right: .5em;
+  z-index: -1;
+}
+
+.MuiCard-root {
+  display: 'block';
+  /* width: 90vw;
+  height: 40vh; */
+  /* margin-top: 2em; */
+}
+
 /* Contact page */
 /*  get new font for contact page! */
 .contact__textbox {
