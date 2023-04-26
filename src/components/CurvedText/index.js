@@ -14,8 +14,9 @@ const CurvedText = () => {
                 startOffset='43'
                 reversed={true}
                 text='britney wang'
+                
                 textProps={{"style": {"fontSize": "22"}}}
-                textPathProps={null}
+                textPathProps={{"fill": "#646466"}}
                 tspanProps={null}
                 ellipseProps={null}
                 svgProps={null} />

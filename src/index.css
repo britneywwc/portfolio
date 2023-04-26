@@ -96,6 +96,7 @@ code {
 }
 
 .curvedtext {
+  
   font-family: 'PierSans';
   position: fixed;
   bottom: 0;
@@ -105,9 +106,9 @@ code {
 .landing__textbox {
   font-family: 'Mondwest';
   font-size: 4em;
-  margin-top: 15%;
-  margin-left: 5vw;
-  margin-right: 15vw;
+  margin-top: 13%;
+  margin-left: 5%;
+  margin-right: 10%;
   width: auto;
   height: 100%;
   flex-wrap: wrap;

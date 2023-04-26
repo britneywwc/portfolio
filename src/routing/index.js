@@ -1,5 +1,4 @@
 import React from 'react'
-import Error from '../pages/Error';
 import Landing from '../pages/Landing';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
