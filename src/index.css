@@ -96,7 +96,6 @@ code {
 }
 
 .curvedtext {
-  
   font-family: 'PierSans';
   position: fixed;
   bottom: 0;
@@ -106,7 +105,7 @@ code {
 .landing__textbox {
   font-family: 'Mondwest';
   font-size: 4em;
-  margin-top: 13%;
+  margin-top: 15%;
   margin-left: 5%;
   margin-right: 10%;
   width: auto;
@@ -176,11 +175,35 @@ code {
   z-index: -1;
 }
 
-.MuiCard-root {
-  display: 'block';
-  /* width: 90vw;
-  height: 40vh; */
-  /* margin-top: 2em; */
+.project__info {
+  margin-top: 2em;
+}
+
+.project__desc {
+  font-family: 'PierSans';
+  /* font-style: italic; */
+  font-size: 1.3em;  
+  float: left;
+  width: 70%;
+}
+
+.project__desc__link {
+  font-family: 'Migra';
+  font-style: italic;
+  /* float: left; */
+  letter-spacing: 3px;
+}
+
+.project__desc__link a {
+  padding-left: 5px;
+}
+
+.project__stack {
+  font-family: 'NeueBit';
+  /* font-style: italic; */
+  font-weight: bold;
+  font-size: 2em;
+  float: right;
 }
 
 /* Contact page */
