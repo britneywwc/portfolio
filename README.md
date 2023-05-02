@@ -1,5 +1,5 @@
 # Portfolio
-A personal portfolio website to display all current and past projects. Built on ReactJS.
+A personal portfolio website to display all current and past projects. Built on ReactJS, deployed on Railway.
 
 
 ## Available Scripts
