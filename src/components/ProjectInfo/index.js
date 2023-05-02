@@ -42,7 +42,7 @@ const ProjectInfo = (props) => {
                 {currProj.images.length > 1 ? 
                 <Grid item>
                     <ImageList cols={2} sx={{
-
+                        // WIP HERE
                         flexWrap: 'nowrap',
                         // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
                         transform: 'translateZ(0)',
