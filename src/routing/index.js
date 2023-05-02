@@ -22,11 +22,17 @@ const Routing = () => {
                 </Element>
             </Box>
 
-            <Box sx={{height: '130vh'}}>
-                <Element name="projects" className="element">
+            <Box sx={{height: '260vh'}}>
+                <Element name="project0" className="element">
                     <Projects/>
                 </Element>
             </Box>
+
+            {/* <Box sx={{height: '130vh'}}>
+                <Element name="project1" className="element">
+                    <Projects/>
+                </Element>
+            </Box> */}
             
             <Box 
                 display="flex"
