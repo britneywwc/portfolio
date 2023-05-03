@@ -44,8 +44,10 @@ const NavHeader = () => {
                         variant="outlined"  
                         disableRipple={true}
                         >
-                        <Link activeClass="active" className="project" to="project0" spy={true} smooth={true} duration={500}>PROJECTS</Link>
+                        <Link activeClass="active" className="project" to="project-curify" spy={true} smooth={true} duration={500}>PROJECTS</Link>
                     </StyledButton>
+
+                    {/* project-gpt */}
 
                     <StyledButton 
                         variant="outlined" 
