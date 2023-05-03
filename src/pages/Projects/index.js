@@ -15,27 +15,23 @@ import downIcon from '../../assets/icons/down-arrow.png';
 
 
 const Projects = (props) => {
-    const currProj = props.currProj;
-
     return (
         <div id="page__projects">
             <Grid container>
 
                 
                 <GridBreak/>
-                {/* CURIFY */}
-                <Box sx={{minHeight:"105vh"}}>
+                <Box sx={{minHeight:"100vh"}}>
                     <ProjectTitle currProj = {projectsData[0]}/>                                                                                
-                    <ProjectInfo currProj={projectsData[0]}/>
-                    
+                    <ProjectInfo currProj={projectsData[0]}/>                    
                 </Box>
+
                 {/* <img className="down__icon"src={downIcon} alt="down icon"/> */}                
 
-                <Box sx={{minHeight:"130vh", zIndex:"-1"}}>                            
+                <Box sx={{minHeight:"100vh", zIndex:"-1"}}>                            
                     {projectsData[0].images.length > 1 ? <ProjectImages images={projectsData[0].images}/> : null}
                 </Box>
-
-                {/* MICHAEL SCOTT GPT-3 */}
+                <GridBreak/>
                 
             </Grid>
         </div>
