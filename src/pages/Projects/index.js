@@ -7,11 +7,8 @@ import ProjectTitle from '../../components/ProjectTitle';
 import ProjectInfo from "../../components/ProjectInfo";
 
 import '../../index.css';
-import projectsData from '../../utils/projectsData.js';
 import ProjectImages from "../../components/ProjectImages";
 import downIcon from '../../assets/icons/down-arrow.png';
-
-
 
 
 const Projects = (props) => {
@@ -21,16 +18,23 @@ const Projects = (props) => {
 
                 
                 <GridBreak/>
+                {/* Project title and info */}
                 <Box sx={{minHeight:"100vh"}}>
-                    <ProjectTitle currProj = {projectsData[0]}/>                                                                                
-                    <ProjectInfo currProj={projectsData[0]}/>                    
-                </Box>
+                    <ProjectTitle currProj = {props.currProj}/>                                                                                
+                    <ProjectInfo currProj={props.currProj} bgColor={props.bgColor}/>                    
+                </Box>                            
 
-                {/* <img className="down__icon"src={downIcon} alt="down icon"/> */}                
+                {/* Additional project images */}
+                {props.currProj.images.length > 1 ? 
+                    <Box sx={{
+                        minHeight:"100vh", 
+                        zIndex:"-1", 
+                        maxWidth: "100%",
+                    }}>
+                        <ProjectImages images={props.currProj.images}/>
+                    </Box> 
+                : null}
 
-                <Box sx={{minHeight:"100vh", zIndex:"-1"}}>                            
-                    {projectsData[0].images.length > 1 ? <ProjectImages images={projectsData[0].images}/> : null}
-                </Box>
                 <GridBreak/>
                 
             </Grid>

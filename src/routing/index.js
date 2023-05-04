@@ -14,7 +14,7 @@ import projectsData from '../utils/projectsData';
 
 const Routing = () => {
     return (
-        <Box sx={{minWidth: '100vw'}}>
+        <Box sx={{minWidth: '100vw', maxWidth: '100%'}}>
             <NavHeader/>
             {/* <CurvedText/> */}
             
@@ -28,14 +28,17 @@ const Routing = () => {
             <Box sx={{minHeight: '260vh'}}>
                 <Element name="project-curify" className="element">
                     <SelectedWorks />
-                    <Projects currProj={projectsData[0]}/>
+                    <Projects currProj={projectsData[0]} bgColor='#23CCB3'/>
                 </Element>
             </Box>
+
+            {/* Add div to separate the both */}
+            {/* <div id="placeholder"/> */}
 
             {/* MICHAEL SCOTT GPT-3 */}
             <Box sx={{minHeight: '130vh'}}>
                 <Element name="project-gpt" className="element">
-                    <Projects currProj={projectsData[0]}/>
+                    <Projects currProj={projectsData[1]} bgColor='black'/>
                 </Element>
             </Box>
             
