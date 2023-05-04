@@ -187,6 +187,7 @@ html {
 
 .project__info {
   margin-top: 1em;
+  width: 100%;
 }
 
 .project__desc {
@@ -202,7 +203,8 @@ html {
   font-weight: bold;
   font-size: 2em;
   float: right;
-  width: 25%;
+  flex-wrap: wrap;
+  max-width: 30%;
 }
 
 .project__stack__link {

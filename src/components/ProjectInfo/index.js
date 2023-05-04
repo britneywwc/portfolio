@@ -12,14 +12,13 @@ const ProjectInfo = (props) => {
                 alignItems="center" 
                 justify="center" 
                 marginTop="5em" 
-                marginLeft="1em" 
-                marginRight="1em"
+                paddingX="2vw"
                 >
                 <Grid item>
                     <Card
                         sx={{
                             zIndex: -1,
-                            width: '95vw',
+                            minWidth: '95vw',
                             height: "60vh",
                             backgroundColor: bgColor,                            
                         }}
@@ -29,8 +28,7 @@ const ProjectInfo = (props) => {
                             height="100%"
                             image={currProj.main_image}
                             alt="project image"
-                            sx={{objectFit: "contain" }}
-
+                            sx={{objectFit: "contain" }}                            
                         /> 
                     </Card>
 
