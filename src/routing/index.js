@@ -33,7 +33,7 @@ const Routing = () => {
             </Box>
 
             {/* Add div to separate the both */}
-            {/* <div id="placeholder"/> */}
+            <div id="placeholder"/>
 
             {/* MICHAEL SCOTT GPT-3 */}
             <Box sx={{minHeight: '130vh'}}>

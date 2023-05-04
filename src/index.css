@@ -200,7 +200,7 @@ html {
 .project__stack {
   font-family: 'NeueBit';
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 2em;
   float: right;
   width: 25%;
 }
@@ -210,7 +210,7 @@ html {
   font-style: italic;
   font-weight: normal;
   letter-spacing: 2px;
-  font-size: 0.6em;
+  font-size: .6em;
   position: relative;;
 }
 

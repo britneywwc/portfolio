@@ -8,7 +8,7 @@ const projectsData =
         "description": "Curify generates a list of curated Netflix shows and movies based on users’ own selected Spotify playlist.",
         "stack": "ReactJS / Spotify API / Railway / Figma",
         "link": "https://github.com/Apple-Piethon/curify",
-        "link_desc": "CHECK OUT THE ONGOING PROJECT",
+        "link_desc": "ONGOING PROJECT",
     },
     {
         "id": 2,
