@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Card, CardMedia } from '@mui/material';
 
+
 const ProjectInfo = (props) => {
     const currProj = props.currProj;
     const bgColor = props.bgColor;
@@ -30,7 +31,11 @@ const ProjectInfo = (props) => {
                             alt="project image"
                             sx={{objectFit: "contain" }}                            
                         /> 
+
+
                     </Card>
+
+                    
 
                     <div className="project__info">
                         <span className="project__desc">{currProj.description}</span>

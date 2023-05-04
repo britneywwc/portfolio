@@ -33,7 +33,7 @@ const Routing = () => {
             </Box>
 
             {/* Add div to separate the both */}
-            <div id="placeholder"/>
+            <div id="placeholder"></div>
 
             {/* MICHAEL SCOTT GPT-3 */}
             <Box sx={{minHeight: '130vh'}}>
@@ -41,6 +41,18 @@ const Routing = () => {
                     <Projects currProj={projectsData[1]} bgColor='black'/>
                 </Element>
             </Box>
+
+            {/* INTREPIDUS */}
+            <Box sx={{minHeight: '130vh'}}>
+                <Element name="project-intrepidus" className="element">
+                    <Projects currProj={projectsData[2]} bgColor='white'/>
+                </Element>
+            </Box>
+
+            {/* READY2EAT */}
+
+            {/* EXPENSE TRACKER */}
+
             
             <Box 
                 display="flex"

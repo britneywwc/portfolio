@@ -19,6 +19,16 @@ const projectsData =
         "stack": "ReactJS / GPT-3",
         "link": "https://github.com/britneywwc/gpt3-writer-starter",
         "link_desc": "PROJECT",
+    },
+    {
+        "id": 3,
+        "title": "INTREPIDUS",
+        "main_image": require("../assets/projects/p3/landing.png"),
+        "images": [],
+        "description": "Intrepidus is a mobile application that helps astronauts shift their sleep according to their circadian rhythm, also included suggested meal and exercise times. Submission for NASA Space Apps Challenge 2020.",
+        "stack": "Flutter / Dart / Firebase",
+        "link": "https://github.com/daniaismadi/intrepidus",
+        "link_desc": "PROJECT",
     }
 
 ]
