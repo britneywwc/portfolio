@@ -150,7 +150,7 @@ code {
   left: 0;
   text-align: left;
   padding-left: 1em;
-  padding-top: 1em;
+  padding-top: .5em;
   
 }
 
@@ -180,34 +180,42 @@ code {
 }
 
 .project__desc {
-  font-family: 'PierSans';
-  /* font-style: italic; */
-  font-size: 1.3em;  
+  font-family: 'NeueBit';
+  font-size: 2em;  
   float: left;
   width: 50%;
 }
 
-.project__desc__link {
-  font-family: 'Migra';
-  font-style: italic;
-  /* float: left; */
-  letter-spacing: 3px;
-}
-
-.project__desc__link a {
-  padding-left: 5px;
-}
-
 .project__stack {
   font-family: 'NeueBit';
-  /* font-style: italic; */
   font-weight: bold;
   font-size: 1.5em;
   float: right;
+  width: 25%;
 }
 
+.project__stack__link {
+  font-family: 'Migra';
+  font-style: italic;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 0.6em;
+  position: relative;;
+}
+
+.project__stack__link a {
+  padding-left: 5px;
+}
+
+
+.down__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* Contact page */
-/*  get new font for contact page! */
 .contact__textbox {
     font-family: 'Migra';
     font-style: normal;
@@ -225,10 +233,8 @@ code {
   width: 1em;      
   padding: 0px 10px;
   vertical-align: middle;
-  /* width: 0.8em */
-  /* padding-bottom: 0.1em; */
-  
 }
+
 
 
 

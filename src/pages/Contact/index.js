@@ -52,8 +52,8 @@ const Contact = (props) => {
                                 disableTouchListener
                                 title="Copied to clipboard"
                             >
-                                <a href="javascript: void(0)" onClick={copyToClipboard}>
-                                <img src={emailIcon} title="email icon"/>
+                                <a href="#javascript" onClick={copyToClipboard}>
+                                <img src={emailIcon} alt="email icon"/>
                                 </a>
                             </Tooltip>
 

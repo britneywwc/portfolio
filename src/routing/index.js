@@ -7,32 +7,37 @@ import CurvedText from '../components/CurvedText';
 
 import {Element, animateScroll as scroll} from "react-scroll";
 import Box from '@mui/material/Box';
+import SelectedWorks from '../components/SelectedWorks';
+import projectsData from '../utils/projectsData';
 
 
 
 const Routing = () => {
     return (
-        <Box sx={{width: '100%'}}>
+        <Box sx={{minWidth: '100vw'}}>
             <NavHeader/>
             {/* <CurvedText/> */}
             
-            <Box sx={{height: '130vh'}}>
+            <Box sx={{minHeight: '130vh'}}>
                 <Element name="home" className="element" >
                     <Landing/>
                 </Element>
             </Box>
 
-            <Box sx={{height: '260vh'}}>
-                <Element name="project0" className="element">
-                    <Projects/>
+            {/* CURIFY */}
+            <Box sx={{minHeight: '260vh'}}>
+                <Element name="project-curify" className="element">
+                    <SelectedWorks />
+                    <Projects currProj={projectsData[0]}/>
                 </Element>
             </Box>
 
-            {/* <Box sx={{height: '130vh'}}>
-                <Element name="project1" className="element">
-                    <Projects/>
+            {/* MICHAEL SCOTT GPT-3 */}
+            <Box sx={{minHeight: '130vh'}}>
+                <Element name="project-gpt" className="element">
+                    <Projects currProj={projectsData[0]}/>
                 </Element>
-            </Box> */}
+            </Box>
             
             <Box 
                 display="flex"

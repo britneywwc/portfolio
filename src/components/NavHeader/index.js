@@ -35,21 +35,23 @@ const NavHeader = () => {
                 <Box sx={{ '& > :not(style)': { m: 1 }, marginTop: '1%', marginRight: '1%', position: 'fixed' }}>
                     <StyledButton
                         variant="outlined" 
-                        disableRipple
+                        disableRipple={true}
                         >
                         <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}>HOME</Link>
                     </StyledButton>
 
                     <StyledButton 
                         variant="outlined"  
-                        disableRipple
+                        disableRipple={true}
                         >
-                        <Link activeClass="active" className="project" to="project0" spy={true} smooth={true} duration={500}>PROJECTS</Link>
+                        <Link activeClass="active" className="project" to="project-curify" spy={true} smooth={true} duration={500}>PROJECTS</Link>
                     </StyledButton>
+
+                    {/* project-gpt */}
 
                     <StyledButton 
                         variant="outlined" 
-                        disableRipple="true">
+                        disableRipple={true}>
                         <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}>CONTACT</Link>
                     </StyledButton>
                 </Box>

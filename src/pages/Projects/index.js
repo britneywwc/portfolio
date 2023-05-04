@@ -1,40 +1,39 @@
 import React from "react";
 import Grid from '@mui/material/Grid';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import CardActions from '@mui/material/CardActions';
+import Box from '@mui/material/Box';
 
 import { GridBreak } from "../../components/GridBreak";
 import ProjectTitle from '../../components/ProjectTitle';
 import ProjectInfo from "../../components/ProjectInfo";
 
-
 import '../../index.css';
 import projectsData from '../../utils/projectsData.js';
+import ProjectImages from "../../components/ProjectImages";
+import downIcon from '../../assets/icons/down-arrow.png';
+
 
 
 
 const Projects = (props) => {
-    var currProj = projectsData[0];
-
     return (
         <div id="page__projects">
             <Grid container>
 
-                <Grid item xs={4}>                    
-                    <div className="project__title__h1"> SELECTED 
-                        <div className="project__title__h1__sub">WORKS</div>
-                    </div>
-                </Grid>
-                <GridBreak/>
-
-                <ProjectTitle currProj = {projectsData[0]}/>
-                <ProjectInfo currProj={projectsData[0]}/>
-
                 
+                <GridBreak/>
+                <Box sx={{minHeight:"100vh"}}>
+                    <ProjectTitle currProj = {projectsData[0]}/>                                                                                
+                    <ProjectInfo currProj={projectsData[0]}/>                    
+                </Box>
 
-                                              
-                </Grid>
+                {/* <img className="down__icon"src={downIcon} alt="down icon"/> */}                
+
+                <Box sx={{minHeight:"100vh", zIndex:"-1"}}>                            
+                    {projectsData[0].images.length > 1 ? <ProjectImages images={projectsData[0].images}/> : null}
+                </Box>
+                <GridBreak/>
+                
+            </Grid>
         </div>
     )
 }
