@@ -43,8 +43,15 @@ const NavHeader = () => {
                     <StyledButton 
                         variant="outlined"  
                         disableRipple={true}
+                        onMouseOver={console.log("Hover")}
+                        onClick={console.log("Clicked")}
                         >
-                        <Link activeClass="active" className="project" to="project-curify" spy={true} smooth={true} duration={500}>PROJECTS</Link>
+                        <Link activeClass="active" className="project" to="project-curify" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={500}
+                            onClick={console.log("clicked")}>
+                                PROJECTS</Link>
                     </StyledButton>
 
                     {/* project-gpt */}

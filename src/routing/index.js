@@ -29,7 +29,7 @@ const Routing = () => {
                 <Element name="project-curify" className="element">
                     <SelectedWorks />
                     <Projects currProj={projectsData[0]} bgColor='#23CCB3'/>
-                </Element>
+                </Element>s
             </Box>
 
             {/* Add div to separate the both */}
@@ -52,6 +52,8 @@ const Routing = () => {
             {/* READY2EAT */}
 
             {/* EXPENSE TRACKER */}
+
+
 
             
             <Box 
