@@ -83,7 +83,7 @@ const NavHeader = (props) => {
             </Grid>
             
             {showNav ?
-            
+                // WIP HERE
                 <Grid container rowSpacing={0.5}>
                     <Grid item xs={4}></Grid>
                         <Grid item xs={4}>
