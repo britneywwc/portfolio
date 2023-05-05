@@ -16,18 +16,18 @@ const Routing = () => {
     const [showNav, setShowNav] = useState(false);
 
     return (
-        <Box sx={{minWidth: '100vw', maxWidth: '100%'}} onClick={() => setShowNav(false)}>
+        <Box sx={{minWidth: '100vw', maxWidth: '100%'}}>
             <NavHeader showNav={showNav} setShowNav={setShowNav}/>
             {/* <CurvedText/> */}
             
-            <Box sx={{minHeight: '130vh'}}>
+            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
                 <Element name="home" className="element" >
                     <Landing/>
                 </Element>
             </Box>
 
             {/* CURIFY */}
-            <Box sx={{minHeight: '260vh'}}>
+            <Box sx={{minHeight: '260vh'}} onClick={() => setShowNav(false)}>
                 <Element name="project-curify" className="element">
                     <SelectedWorks />
                     <Projects currProj={projectsData[0]} bgColor='#23CCB3'/>
@@ -35,17 +35,17 @@ const Routing = () => {
             </Box>
 
             {/* Add div to separate the both */}
-            <div id="placeholder"></div>
+            <div id="placeholder" onClick={() => setShowNav(false)}></div>
 
             {/* MICHAEL SCOTT GPT-3 */}
-            <Box sx={{minHeight: '130vh'}}>
+            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
                 <Element name="project-gpt" className="element">
                     <Projects currProj={projectsData[1]} bgColor='black'/>
                 </Element>
             </Box>
 
             {/* INTREPIDUS */}
-            <Box sx={{minHeight: '130vh'}}>
+            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
                 <Element name="project-intrepidus" className="element">
                     <Projects currProj={projectsData[2]} bgColor='white'/>
                 </Element>
@@ -62,7 +62,8 @@ const Routing = () => {
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
-                minHeight="100vh">
+                minHeight="100vh"
+                onClick={() => setShowNav(false)}>
                 <Element name="contact" className="element">
                     <Contact/>
                 </Element>

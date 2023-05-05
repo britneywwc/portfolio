@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import {Link} from "react-scroll";
 import { Button, Box, Stack, Grid } from '@mui/material';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
@@ -7,6 +7,7 @@ import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 const NavHeader = (props) => {
     const showNav = props.showNav;
     const setShowNav = props.setShowNav;
+
 
     const theme = createTheme({
         palette: {
@@ -21,17 +22,18 @@ const NavHeader = (props) => {
         fontFamily: 'PierSans',
         borderRadius: 28,
         backgroundColor: 'rgba(245,235,224, 0.5)',
-        fontSize: '1em',
-        minWidth: '5vw',
+        fontSize: 'calc(60% + .3vw)',
+        minWidth: 'calc(10% + 1vw)',
         zIndex: 1,
+        cursor: 'pointer',
         ':hover': {
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.primary.secondary,
         },
         }));
 
-    const handleOnMouseOver = () => {
-        setShowNav(true);       
+    const handleOnMouseOver = () => {        
+        setShowNav(true);
     }
 
     const handleOnClick = () => {
@@ -52,23 +54,29 @@ const NavHeader = (props) => {
                 <Grid container spacing={1}>
                 <Grid item>
 
-                    <StyledButton
-                        variant="outlined" 
-                        disableRipple={true}
-                        >
+                    <StyledButton variant="outlined" disableRipple={true}>
                         <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}
                          onClick={() => handleOnClick()}>HOME</Link>
                     </StyledButton>
                 </Grid>
 
                 <Grid item>
-                    <StyledButton variant="outlined"  disableRipple={true} onMouseOver={() => handleOnMouseOver()}>PROJECTS</StyledButton>       
+                    <StyledButton 
+                        variant="outlined"  
+                        disableRipple={true}
+                        onClick={() => handleOnMouseOver()}
+                        onMouseOver={() => handleOnMouseOver()}
+                        sx={{
+                            backgroundColor: showNav ? 'black' : 'rgba(245,235,224, 0.5)',
+                            color: showNav ? 'white' : 'black',
+                        }}
+                     >
+                        PROJECTS
+                     </StyledButton>       
                 </Grid>                                                
                     
                 <Grid item>
-                    <StyledButton 
-                        variant="outlined" 
-                        disableRipple={true}>
+                    <StyledButton variant="outlined" disableRipple={true}>
                         <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}
                         onClick={() => handleOnClick()}>CONTACT</Link>
                     </StyledButton>
@@ -77,8 +85,7 @@ const NavHeader = (props) => {
             
             {showNav ?
             
-                <Grid container xs={12} rowSpacing={0.5}
-                >
+                <Grid container rowSpacing={0.5}>
                     <Grid item xs={4}></Grid>
                         <Grid item xs={4}>
                             <StyledButton variant="outlined" disableRipple={true}>
@@ -100,14 +107,14 @@ const NavHeader = (props) => {
                     <Grid item xs={4}></Grid>
 
 
-                    <Grid item xs={4}></Grid>
+                    {/* <Grid item xs={4}></Grid>
                         <Grid item xs={4}>
                             <StyledButton variant="outlined" disableRipple={true}>
                                 <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
-                                onClick={() => handleOnClick()}>stop</Link>
+                                onClick={() => handleOnClick()}>INTREPIDUS</Link>
                             </StyledButton> 
                         </Grid>
-                    <Grid item xs={4}></Grid>
+                    <Grid item xs={4}></Grid> */}
 
                 </Grid>
                 : null}
