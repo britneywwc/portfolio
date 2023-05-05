@@ -28,18 +28,17 @@ const Routing = () => {
 
             {/* CURIFY */}
             <Box sx={{minHeight: '260vh'}} onClick={() => setShowNav(false)}>
+                <div id="placeholder"/>
                 <Element name="project-curify" className="element">
                     <SelectedWorks />
                     <Projects currProj={projectsData[0]} bgColor='#23CCB3'/>
-                </Element>s
+                </Element>
             </Box>
-
-            {/* Add div to separate the both */}
-            <div id="placeholder" onClick={() => setShowNav(false)}></div>
 
             {/* MICHAEL SCOTT GPT-3 */}
             <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
                 <Element name="project-gpt" className="element">
+                    <div id="placeholder"/>
                     <Projects currProj={projectsData[1]} bgColor='black'/>
                 </Element>
             </Box>
@@ -47,6 +46,7 @@ const Routing = () => {
             {/* INTREPIDUS */}
             <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
                 <Element name="project-intrepidus" className="element">
+                    <div id="placeholder"/>
                     <Projects currProj={projectsData[2]} bgColor='white'/>
                 </Element>
             </Box>

@@ -47,13 +47,12 @@ const NavHeader = (props) => {
                     '& > :not(style)': { m: 1 }, 
                     marginTop: '1%', 
                     marginRight: '1%', 
-                    position: 'fixed' 
+                    position: 'fixed',
                 }}
                 right="0"
             >
                 <Grid container spacing={1}>
                 <Grid item>
-
                     <StyledButton variant="outlined" disableRipple={true}>
                         <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}
                          onClick={() => handleOnClick()}>HOME</Link>
@@ -107,14 +106,14 @@ const NavHeader = (props) => {
                     <Grid item xs={4}></Grid>
 
 
-                    {/* <Grid item xs={4}></Grid>
+                    <Grid item xs={4}></Grid>
                         <Grid item xs={4}>
                             <StyledButton variant="outlined" disableRipple={true}>
                                 <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
                                 onClick={() => handleOnClick()}>INTREPIDUS</Link>
                             </StyledButton> 
                         </Grid>
-                    <Grid item xs={4}></Grid> */}
+                    <Grid item xs={4}></Grid>
 
                 </Grid>
                 : null}

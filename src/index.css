@@ -109,8 +109,8 @@ html {
 
 .landing__textbox {
   font-family: 'Mondwest';
-  font-size: 4em;
-  margin-top: 15%;
+  font-size: calc(100% + 4vh);
+  margin-top: calc(20% + 1vh);
   margin-left: 5%;
   margin-right: 10%;
   width: auto;
@@ -148,7 +148,7 @@ html {
 }
 
 #placeholder {
-  min-height: 50vh;
+  min-height: 10vh;
 }
 
 .project__title__h1 {
