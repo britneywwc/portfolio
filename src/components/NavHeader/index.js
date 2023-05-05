@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {Link} from "react-scroll";
-
-
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import Stack from '@mui/material/Stack';
+import { Button, Box, Stack, Grid } from '@mui/material';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 
-const NavHeader = () => {
+const NavHeader = (props) => {
+    const showNav = props.showNav;
+    const setShowNav = props.setShowNav;
+
     const theme = createTheme({
         palette: {
             primary: {
@@ -21,7 +20,9 @@ const NavHeader = () => {
     const StyledButton = styled(Button)(({ theme }) => ({
         fontFamily: 'PierSans',
         borderRadius: 28,
-        backgroundColor: 'transparent',
+        backgroundColor: 'rgba(245,235,224, 0.5)',
+        fontSize: '1em',
+        minWidth: '5vw',
         zIndex: 1,
         ':hover': {
             backgroundColor: theme.palette.primary.main,
@@ -29,40 +30,90 @@ const NavHeader = () => {
         },
         }));
 
+    const handleOnMouseOver = () => {
+        setShowNav(true);       
+    }
+
+    const handleOnClick = () => {
+        setShowNav(false);
+    }    
+
     return (
         <ThemeProvider theme={theme}>
-            <Stack direction="row" spacing={1} justifyContent="flex-end">
-                <Box sx={{ '& > :not(style)': { m: 1 }, marginTop: '1%', marginRight: '1%', position: 'fixed' }}>
+            <Box 
+                sx={{ 
+                    '& > :not(style)': { m: 1 }, 
+                    marginTop: '1%', 
+                    marginRight: '1%', 
+                    position: 'fixed' 
+                }}
+                right="0"
+            >
+                <Grid container spacing={1}>
+                <Grid item>
+
                     <StyledButton
                         variant="outlined" 
                         disableRipple={true}
                         >
-                        <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}>HOME</Link>
+                        <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}
+                         onClick={() => handleOnClick()}>HOME</Link>
                     </StyledButton>
+                </Grid>
 
-                    <StyledButton 
-                        variant="outlined"  
-                        disableRipple={true}
-                        onMouseOver={console.log("Hover")}
-                        onClick={console.log("Clicked")}
-                        >
-                        <Link activeClass="active" className="project" to="project-curify" 
-                            spy={true} 
-                            smooth={true} 
-                            duration={500}
-                            onClick={console.log("clicked")}>
-                                PROJECTS</Link>
-                    </StyledButton>
-
-                    {/* project-gpt */}
-
+                <Grid item>
+                    <StyledButton variant="outlined"  disableRipple={true} onMouseOver={() => handleOnMouseOver()}>PROJECTS</StyledButton>       
+                </Grid>                                                
+                    
+                <Grid item>
                     <StyledButton 
                         variant="outlined" 
                         disableRipple={true}>
-                        <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}>CONTACT</Link>
+                        <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}
+                        onClick={() => handleOnClick()}>CONTACT</Link>
                     </StyledButton>
-                </Box>
-            </Stack>
+                </Grid>
+            </Grid>
+            
+            {showNav ?
+            
+                <Grid container xs={12} rowSpacing={0.5}
+                >
+                    <Grid item xs={4}></Grid>
+                        <Grid item xs={4}>
+                            <StyledButton variant="outlined" disableRipple={true}>
+                                <Link activeClass="active" className="project" to="project-curify" spy={true} smooth={true} duration={500}
+                                onClick={() => handleOnClick()}>CURIFY</Link>
+                            </StyledButton> 
+                        </Grid>
+                    <Grid item xs={4}></Grid>
+
+                    
+
+                    <Grid item xs={4}></Grid>
+                        <Grid item xs={4}>
+                            <StyledButton variant="outlined" disableRipple={true}>
+                                <Link activeClass="active" className="project" to="project-gpt" spy={true} smooth={true} duration={500}
+                                onClick={() => handleOnClick()}>MICHAEL SCOTT GPT</Link>
+                            </StyledButton> 
+                        </Grid>
+                    <Grid item xs={4}></Grid>
+
+
+                    <Grid item xs={4}></Grid>
+                    <Grid item xs={4}>
+                        <StyledButton variant="outlined" disableRipple={true}>
+                            <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
+                            onClick={() => handleOnClick()}>stop</Link>
+                        </StyledButton> 
+                    </Grid>
+                    <Grid item xs={4}></Grid>
+
+                </Grid>
+                : null}
+        </Box>
+
+
         </ThemeProvider>
 
             )

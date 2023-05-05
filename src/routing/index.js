@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Landing from '../pages/Landing';
 import Projects from '../pages/Projects';
 import Contact from '../pages/Contact';
@@ -13,9 +13,11 @@ import projectsData from '../utils/projectsData';
 
 
 const Routing = () => {
+    const [showNav, setShowNav] = useState(false);
+
     return (
-        <Box sx={{minWidth: '100vw', maxWidth: '100%'}}>
-            <NavHeader/>
+        <Box sx={{minWidth: '100vw', maxWidth: '100%'}} onClick={() => setShowNav(false)}>
+            <NavHeader showNav={showNav} setShowNav={setShowNav}/>
             {/* <CurvedText/> */}
             
             <Box sx={{minHeight: '130vh'}}>
