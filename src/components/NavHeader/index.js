@@ -101,12 +101,12 @@ const NavHeader = (props) => {
 
 
                     <Grid item xs={4}></Grid>
-                    <Grid item xs={4}>
-                        <StyledButton variant="outlined" disableRipple={true}>
-                            <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
-                            onClick={() => handleOnClick()}>stop</Link>
-                        </StyledButton> 
-                    </Grid>
+                        <Grid item xs={4}>
+                            <StyledButton variant="outlined" disableRipple={true}>
+                                <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
+                                onClick={() => handleOnClick()}>stop</Link>
+                            </StyledButton> 
+                        </Grid>
                     <Grid item xs={4}></Grid>
 
                 </Grid>
