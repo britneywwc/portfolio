@@ -34,6 +34,8 @@ const Routing = () => {
                     <Projects currProj={projectsData[0]} bgColor='#23CCB3'/>
                 </Element>
             </Box>
+            <div id="placeholder"/>
+
 
             {/* MICHAEL SCOTT GPT-3 */}
             <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
@@ -42,6 +44,9 @@ const Routing = () => {
                     <Projects currProj={projectsData[1]} bgColor='black'/>
                 </Element>
             </Box>
+
+            {/* can make the placeholder take more space */}
+            <div id="placeholder"/>
 
             {/* INTREPIDUS */}
             <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
