@@ -15,7 +15,6 @@ const Projects = (props) => {
     return (
         <div id="page__projects">
             <Grid container>
-
                 
                 <GridBreak/>
                 {/* Project title and info */}
