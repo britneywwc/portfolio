@@ -89,7 +89,6 @@ const NavHeader = (props) => {
             
         </Box>
 
-
         </ThemeProvider>
 
             )
