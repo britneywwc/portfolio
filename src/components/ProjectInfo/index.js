@@ -12,7 +12,8 @@ const ProjectInfo = (props) => {
             direction="column" 
             alignItems="center" 
             justify="center" 
-            marginTop="7em" 
+            // WIP HERE MARGIN TOP
+            marginTop="5em" 
             paddingX="2vw"
             >
             <Grid item>
