@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 import { Box, Grid, createTheme, ThemeProvider} from '@mui/material';
 import NavProjects from "../NavProjects";
 import StyledNavButton from "../StyledNavButton";
@@ -7,7 +7,6 @@ import StyledNavButton from "../StyledNavButton";
 const NavHeader = (props) => {
     const showNav = props.showNav;
     const setShowNav = props.setShowNav;
-
 
     const theme = createTheme({
         palette: {
@@ -17,8 +16,6 @@ const NavHeader = (props) => {
             }
         },
         });
-
-    
 
     const handleOnMouseOver = () => {        
         setShowNav(true);
@@ -46,6 +43,8 @@ const NavHeader = (props) => {
                         <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}
                          onClick={handleOnClick}>HOME</Link>
                     </StyledNavButton>
+
+
                 </Grid>
 
                 <Grid item sx={{maxWidth: "100%"}}>
@@ -60,7 +59,10 @@ const NavHeader = (props) => {
                         }}
                      >
                         PROJECTS
-                     </StyledNavButton>  
+                     </StyledNavButton> 
+
+                     {showNav ? <NavProjects handleOnClick={handleOnClick}/> : null } 
+
                                       
                 </Grid>                                                
                     
@@ -71,12 +73,9 @@ const NavHeader = (props) => {
                     </StyledNavButton>
                 </Grid>
                 
-            </Grid>
-
-            {showNav ? <NavProjects handleOnClick={handleOnClick}/> : null }
-            
-            
+            </Grid>    
         </Box>
+        
 
         </ThemeProvider>
 

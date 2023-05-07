@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, styled } from "@mui/material";
 
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -7,6 +6,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
     backgroundColor: 'rgba(245,235,224, 0.5)',
     fontSize: 'calc(60% + .3vw)',
     minWidth: 'calc(10% + 1vw)',
+    minWidth: 'max-content',
+    whiteSpace: 'nowrap',
     // maxWidth: '7vw',
     // maxWidth: 'calc(100% + 7vw)',
     zIndex: 1,
