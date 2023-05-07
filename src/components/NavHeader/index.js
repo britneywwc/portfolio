@@ -1,9 +1,8 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import {Link} from "react-scroll";
-import { Button, Box, Stack, Grid } from '@mui/material';
-import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
-import GridButtonEmpty from "../GridButtonEmpty";
-
+import { Box, Grid, createTheme, ThemeProvider} from '@mui/material';
+import NavProjects from "../NavProjects";
+import StyledNavButton from "../StyledNavButton";
 
 const NavHeader = (props) => {
     const showNav = props.showNav;
@@ -19,21 +18,7 @@ const NavHeader = (props) => {
         },
         });
 
-    const StyledButton = styled(Button)(({ theme }) => ({
-        fontFamily: 'PierSans',
-        borderRadius: 28,
-        backgroundColor: 'rgba(245,235,224, 0.5)',
-        fontSize: 'calc(60% + .3vw)',
-        minWidth: 'calc(10% + 1vw)',
-        // maxWidth: '7vw',
-        // maxWidth: 'calc(100% + 7vw)',
-        zIndex: 1,
-        cursor: 'pointer',
-        ':hover': {
-            backgroundColor: theme.palette.primary.main,
-            color: theme.palette.primary.secondary,
-        },
-        }));
+    
 
     const handleOnMouseOver = () => {        
         setShowNav(true);
@@ -55,87 +40,47 @@ const NavHeader = (props) => {
                 }}
                 right="0"
             >
-                <Grid container spacing={2}>
-                <Grid item>
-                    <StyledButton variant="outlined" disableRipple={true}>
+                <Grid container spacing={2} sx={{ maxWidth: "100% !important" }}>
+                    <Grid item sx={{maxWidth: "100%"}}>
+                    <StyledNavButton variant="outlined" disableRipple={true}>
                         <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}
-                         onClick={() => handleOnClick()}>HOME</Link>
-                    </StyledButton>
+                         onClick={handleOnClick}>HOME</Link>
+                    </StyledNavButton>
                 </Grid>
 
-                <Grid item>
-                    <StyledButton 
+                <Grid item sx={{maxWidth: "100%"}}>
+                    <StyledNavButton 
                         variant="outlined"  
                         disableRipple={true}
-                        onClick={() => handleOnMouseOver()}
-                        onMouseOver={() => handleOnMouseOver()}
+                        onClick={handleOnMouseOver}
+                        onMouseOver={handleOnMouseOver}
                         sx={{
                             backgroundColor: showNav ? 'black' : 'rgba(245,235,224, 0.5)',
                             color: showNav ? 'white' : 'black',
                         }}
                      >
                         PROJECTS
-                     </StyledButton>  
-
-                     {showNav ?
-                // WIP HERE
-                <Grid container rowSpacing={0.5}>
-                    <GridButtonEmpty/>
-                        <Grid item xs={4}>
-                            <StyledButton variant="outlined" disableRipple={true}>
-                                <Link activeClass="active" className="project" to="project-curify" spy={true} smooth={true} duration={500}
-                                onClick={() => handleOnClick()}>CURIFY</Link>
-                            </StyledButton>                            
-                        </Grid>
-                        <Grid item xs={4}>
-                            <StyledButton variant="outlined" disableRipple={true}>
-                                <Link activeClass="active" className="project" to="project-gpt" spy={true} smooth={true} duration={500}
-                                onClick={() => handleOnClick()}>michael</Link>
-                            </StyledButton> 
-                        </Grid>
-                
-                    <Grid item xs={4}>
-                        <StyledButton variant="outlined" disableRipple={true}>
-                            <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
-                            onClick={() => handleOnClick()}>INTREPIDUS</Link>
-                        </StyledButton> 
-                    </Grid>
-                    
-                    {/* TO ADD */}
-
-                    <Grid item xs={4}>
-                        <StyledButton variant="outlined" disableRipple={true}>
-                            <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
-                            onClick={() => handleOnClick()}>READY2EAT</Link>
-                        </StyledButton> 
-                    </Grid>
-
-
-                    <Grid item xs={4}>
-                        <StyledButton variant="outlined" disableRipple={true}>
-                            <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
-                            onClick={() => handleOnClick()}>EXPENSE TRACKER</Link>
-                        </StyledButton> 
-                    </Grid>
-                </Grid>
-                : null}    
-                 
+                     </StyledNavButton>  
+                                      
                 </Grid>                                                
                     
-                <Grid item>
-                    <StyledButton variant="outlined" disableRipple={true}>
+                <Grid item sx={{maxWidth: "100%"}}>
+                    <StyledNavButton variant="outlined" disableRipple={true}>
                         <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}
-                        onClick={() => handleOnClick()}>CONTACT</Link>
-                    </StyledButton>
+                        onClick={handleOnClick}>CONTACT</Link>
+                    </StyledNavButton>
                 </Grid>
+                
             </Grid>
+
+            {showNav ? <NavProjects handleOnClick={handleOnClick}/> : null }
             
             
         </Box>
 
         </ThemeProvider>
 
-            )
+    )
 }
 
-export default NavHeader
+export default NavHeader;
