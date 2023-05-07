@@ -56,34 +56,78 @@ const NavHeader = (props) => {
                 right="0"
             >
                 <Grid container spacing={2}>
-                    <Grid item>
+                <Grid item>
+                    <StyledButton variant="outlined" disableRipple={true}>
+                        <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}
+                         onClick={() => handleOnClick()}>HOME</Link>
+                    </StyledButton>
+                </Grid>
+
+                <Grid item>
+                    <StyledButton 
+                        variant="outlined"  
+                        disableRipple={true}
+                        onClick={() => handleOnMouseOver()}
+                        onMouseOver={() => handleOnMouseOver()}
+                        sx={{
+                            backgroundColor: showNav ? 'black' : 'rgba(245,235,224, 0.5)',
+                            color: showNav ? 'white' : 'black',
+                        }}
+                     >
+                        PROJECTS
+                     </StyledButton>  
+
+                     {showNav ?
+                // WIP HERE
+                <Grid container rowSpacing={0.5}>
+                    <GridButtonEmpty/>
+                        <Grid item xs={4}>
+                            <StyledButton variant="outlined" disableRipple={true}>
+                                <Link activeClass="active" className="project" to="project-curify" spy={true} smooth={true} duration={500}
+                                onClick={() => handleOnClick()}>CURIFY</Link>
+                            </StyledButton>                            
+                        </Grid>
+                        <Grid item xs={4}>
+                            <StyledButton variant="outlined" disableRipple={true}>
+                                <Link activeClass="active" className="project" to="project-gpt" spy={true} smooth={true} duration={500}
+                                onClick={() => handleOnClick()}>michael</Link>
+                            </StyledButton> 
+                        </Grid>
+                
+                    <Grid item xs={4}>
                         <StyledButton variant="outlined" disableRipple={true}>
-                            <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}
-                            onClick={() => handleOnClick()}>HOME</Link>
-                        </StyledButton>
+                            <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
+                            onClick={() => handleOnClick()}>INTREPIDUS</Link>
+                        </StyledButton> 
+                    </Grid>
+                    
+                    {/* TO ADD */}
+
+                    <Grid item xs={4}>
+                        <StyledButton variant="outlined" disableRipple={true}>
+                            <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
+                            onClick={() => handleOnClick()}>READY2EAT</Link>
+                        </StyledButton> 
                     </Grid>
 
-                    <Grid item>
-                        <StyledButton 
-                            variant="outlined"  
-                            disableRipple={true}
-                            onClick={() => handleOnMouseOver()}
-                            onMouseOver={() => handleOnMouseOver()}
-                            sx={{
-                                backgroundColor: showNav ? 'black' : 'rgba(245,235,224, 0.5)',
-                                color: showNav ? 'white' : 'black',
-                            }}
-                        >
-                            PROJECTS
-                        </StyledButton>   
-                    </Grid>                                                
-                        
-                    <Grid item>
+
+                    <Grid item xs={4}>
                         <StyledButton variant="outlined" disableRipple={true}>
-                            <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}
-                            onClick={() => handleOnClick()}>CONTACT</Link>
-                        </StyledButton>
+                            <Link activeClass="active" className="project" to="project-intrepidus" spy={true} smooth={true} duration={500}
+                            onClick={() => handleOnClick()}>EXPENSE TRACKER</Link>
+                        </StyledButton> 
                     </Grid>
+                </Grid>
+                : null}    
+                 
+                </Grid>                                                
+                    
+                <Grid item>
+                    <StyledButton variant="outlined" disableRipple={true}>
+                        <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}
+                        onClick={() => handleOnClick()}>CONTACT</Link>
+                    </StyledButton>
+                </Grid>
             </Grid>
             
             
