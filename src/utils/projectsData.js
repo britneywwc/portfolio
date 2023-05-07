@@ -29,7 +29,27 @@ const projectsData =
         "stack": "Flutter / Dart / Firebase",
         "link": "https://github.com/daniaismadi/intrepidus",
         "link_desc": "PROJECT",
-    }
+    },
+    {
+        "id": 4,
+        "title": "READY2EAT",
+        "main_image": "",
+        "images": [],
+        "description": "A mobile application which allows users to input a list of restaurants and randomly chooses one out of the options.",
+        "stack": "React Native",
+        "link": "https://github.com/britneywwc/ready2eat",
+        "link_desc": "PROJECT"
+    },
+    {
+        "id": 5,
+        "title": "EXPENSE TRACKER",
+        "main_image": "",
+        "images": [],
+        "description": "A simple expense tracker application where users can add expenses and gives a summary overview of their expenses based on every month of the filtered years.",
+        "stack": "ReactJS",
+        "link": "https://github.com/britneywwc/expense-tracker",
+        "link_desc": "PROJECT",
+    },
 
 ]
 

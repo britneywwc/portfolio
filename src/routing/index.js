@@ -57,8 +57,20 @@ const Routing = () => {
             </Box>
 
             {/* READY2EAT */}
+            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
+                <Element name="project-eat" className="element">
+                    <div id="placeholder"/>
+                    <Projects currProj={projectsData[3]} bgColor='white'/>
+                </Element>
+            </Box>
 
             {/* EXPENSE TRACKER */}
+            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
+                <Element name="project-expense" className="element">
+                    <div id="placeholder"/>
+                    <Projects currProj={projectsData[4]} bgColor='white'/>
+                </Element>
+            </Box>
 
 
 

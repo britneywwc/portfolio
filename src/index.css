@@ -171,14 +171,14 @@ html {
 
 .project__card__title__number {
   font-family: 'Migra';
-  font-size: .4em;
-  padding: 2em;
+  font-size: calc(30% + 1vh);
+  padding: 2vw;
 }
 
 .project__card__title__text {
   font-family: 'Migra';
   font-weight: normal;
-  font-size: 4.5em;
+  font-size: calc(50% + 10vh);
   position: absolute;
   right: 0;
   padding-right: .5em;
@@ -192,7 +192,7 @@ html {
 
 .project__desc {
   font-family: 'NeueBit';
-  font-size: 2em;  
+  font-size: calc(100% + 2vh);
   float: left;
   width: 50%;
   flex-wrap: wrap;
@@ -201,7 +201,7 @@ html {
 .project__stack {
   font-family: 'NeueBit';
   font-weight: bold;
-  font-size: 2em;
+  font-size: calc(100% + 2vh);
   float: right;
   flex-wrap: wrap;
   max-width: 30%;
@@ -212,8 +212,9 @@ html {
   font-style: italic;
   font-weight: normal;
   letter-spacing: 2px;
-  font-size: .6em;
-  position: relative;;
+  position: relative;
+  font-size: calc(20% + 1vh);
+
 }
 
 .project__stack__link a {

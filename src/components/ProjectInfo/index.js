@@ -7,49 +7,45 @@ const ProjectInfo = (props) => {
     const bgColor = props.bgColor;
     
     return (
-            <Grid container
-                spacing={0}
-                direction="column" 
-                alignItems="center" 
-                justify="center" 
-                marginTop="5em" 
-                paddingX="2vw"
-                >
-                <Grid item>
-                    <Card
-                        sx={{
-                            zIndex: -1,
-                            minWidth: '95vw',
-                            height: "60vh",
-                            backgroundColor: bgColor,                            
-                        }}
-                        >  
-                        <CardMedia
-                            component="img"
-                            height="100%"
-                            image={currProj.main_image}
-                            alt="project image"
-                            sx={{objectFit: "contain" }}                            
-                        /> 
+        <Grid container
+            spacing={0}
+            direction="column" 
+            alignItems="center" 
+            justify="center" 
+            marginTop="7em" 
+            paddingX="2vw"
+            >
+            <Grid item>
+                <Card
+                    sx={{
+                        zIndex: -1,
+                        minWidth: '95vw',
+                        height: "60vh",
+                        backgroundColor: bgColor,                            
+                    }}
+                    >  
+                    <CardMedia
+                        component="img"
+                        height="100%"
+                        image={currProj.main_image}
+                        alt="project image"
+                        sx={{objectFit: "contain" }}                            
+                    /> 
+                </Card>
 
-
-                    </Card>
-
-                    
-
-                    <div className="project__info">
-                        <span className="project__desc">{currProj.description}</span>
-                        <span className="project__stack">{currProj.stack.toUpperCase()}
-                            <span className="project__stack__link" ><br/>→ {currProj.link_desc}                                                                          
-                                <a href={currProj.link} target="_blank" rel="noopener noreferrer">                            
-                                    HERE
-                                </a>.
-                            </span>
-                        </span>                            
-                    </div>                        
-                </Grid>
-            
-            </Grid> 
+                <div className="project__info">
+                    <span className="project__desc">{currProj.description}</span>
+                    <span className="project__stack">{currProj.stack.toUpperCase()}
+                        <span className="project__stack__link" ><br/>→ {currProj.link_desc}                                                                          
+                            <a href={currProj.link} target="_blank" rel="noopener noreferrer">                            
+                                HERE
+                            </a>.
+                        </span>
+                    </span>                            
+                </div>                        
+            </Grid>
+        
+        </Grid> 
     );
 }
 

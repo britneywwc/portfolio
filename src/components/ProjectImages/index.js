@@ -7,12 +7,13 @@ const ProjectImages = (props) => {
     const matches = useMediaQuery('(min-width:1000px)');
 
     return (
-        <Grid item>
+        <Grid item sx={{paddingX: '2vw'}}>
             <ImageList 
                 cols={matches ? 2 : 1}
                 sx={{          
                     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
                     transform: 'translateZ(0)',
+                    borderRadius: '1%',
                 }}>
                 {images.map((item) => (
                     <ImageListItem key={item}>
