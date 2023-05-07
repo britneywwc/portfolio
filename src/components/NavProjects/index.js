@@ -8,7 +8,7 @@ const NavProjects = (props) => {
     return (
         <Box sx={{ 
             marginTop: '0.5vh', 
-            maxWidth: '6vw',
+            maxWidth: '5vw',
             marginLeft: '1%',
         }}
         right="0">

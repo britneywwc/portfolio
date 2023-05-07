@@ -13,7 +13,7 @@ const ProjectInfo = (props) => {
             alignItems="center" 
             justify="center" 
             // WIP HERE MARGIN TOP
-            marginTop="5em" 
+            marginTop="10vh" 
             paddingX="2vw"
             >
             <Grid item>
