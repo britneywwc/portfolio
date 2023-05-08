@@ -18,7 +18,7 @@ const Projects = (props) => {
                 
                 <GridBreak/>
                 {/* Project title and info */}
-                <Box sx={{minHeight:"100vh"}}>
+                <Box sx={{minHeight:"90vh"}}>
                     <ProjectTitle currProj = {props.currProj}/>                                                                                
                     <ProjectInfo currProj={props.currProj} bgColor={props.bgColor}/>                    
                 </Box>                            
@@ -30,12 +30,12 @@ const Projects = (props) => {
                         zIndex:"-1", 
                         maxWidth: "100%",
                     }}>
-                        <ProjectImages images={props.currProj.images}/>
+                        <ProjectImages images={props.currProj.images} appType={props.currProj.app_type}/>
+                        
                     </Box> 
                 : null}
-
-                <GridBreak/>
-                
+    
+            <GridBreak/>
             </Grid>
         </div>
     )

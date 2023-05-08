@@ -34,11 +34,12 @@ const Routing = () => {
                     <Projects currProj={projectsData[0]} bgColor='#23CCB3'/>
                 </Element>
             </Box>
-            <div id="placeholder"/>
+            <div id="placeholder"/><div id="placeholder"/>
+            
 
 
             {/* MICHAEL SCOTT GPT-3 */}
-            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
+            <Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
                 <Element name="project-gpt" className="element">
                     <div id="placeholder"/>
                     <Projects currProj={projectsData[1]} bgColor='black'/>
@@ -55,25 +56,15 @@ const Routing = () => {
                     <Projects currProj={projectsData[2]} bgColor='white'/>
                 </Element>
             </Box>
-
-            {/* READY2EAT */}
-            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
-                <Element name="project-eat" className="element">
-                    <div id="placeholder"/>
-                    <Projects currProj={projectsData[3]} bgColor='white'/>
-                </Element>
-            </Box>
+            <div id="placeholder"/><div id="placeholder"/>
 
             {/* EXPENSE TRACKER */}
             <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
                 <Element name="project-expense" className="element">
                     <div id="placeholder"/>
-                    <Projects currProj={projectsData[4]} bgColor='white'/>
+                    <Projects currProj={projectsData[3]} bgColor='#3f3f3f'/>
                 </Element>
             </Box>
-
-
-
             
             <Box 
                 display="flex"

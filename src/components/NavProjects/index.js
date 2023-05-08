@@ -32,13 +32,6 @@ const NavProjects = (props) => {
                     onClick={props.handleOnClick}>INTREPIDUS</Link>
                 </StyledNavButton> 
             </Grid>
-
-            <Grid item xs={12} sx={{maxWidth: "100%"}}>
-                <StyledNavButton variant="outlined" disableRipple={true}>
-                    <Link activeClass="active" className="project" to="project-eat" spy={true} smooth={true} duration={500}
-                    onClick={props.handleOnClick}>READY2EAT</Link>
-                </StyledNavButton> 
-            </Grid>
                 
             <Grid item xs={12} sx={{maxWidth: "100%"}}>
                 <StyledNavButton variant="outlined" disableRipple={true}>
