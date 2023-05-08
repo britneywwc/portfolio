@@ -39,6 +39,7 @@ const Contact = (props) => {
                             <img src={linkedInIcon} alt="linkedin icon"/></a>
                             <a href="https://github.com/britneywwc" target="_blank" rel="noopener noreferrer">
                             <img src={githubIcon} alt="github icon"/></a>
+                            <span className="contact__tooltip">
                             <Tooltip
                                 PopperProps={{
                                 disablePortal: true,
@@ -56,6 +57,7 @@ const Contact = (props) => {
                                 <img src={emailIcon} alt="email icon"/>
                                 </a>
                             </Tooltip>
+                            </span>
 
                         </div>
                     </ClickAwayListener>   

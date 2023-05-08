@@ -242,6 +242,10 @@ code {
   padding: 7px 10px;
 }
 
+.contact__tooltip {
+  letter-spacing: 1px;
+}
+
 .contact__icon {
   width: 1em;      
   padding: 0px 10px;

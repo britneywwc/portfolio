@@ -33,12 +33,9 @@ const ProjectImages = (props) => {
         <Box
             display="flex"
             sx={{
-                // bgcolor: "grey",
                 minWidth: '100vw',
                 justifyContent: 'center',
                 alignItems: 'center',
-                // height: '10vh',
-                // overflow: 'scroll',
             }}
             >
             <ImageList
@@ -47,11 +44,6 @@ const ProjectImages = (props) => {
                     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
                     transform: 'translateZ(0)',
                     paddingX: '2vw',
-                    // gridAutoFlow: "column",
-                    // gridTemplateColumns: "repeat(auto-fill,minmax(40vw, 80vw)) !important",
-                    // gridAutoColumns: "minmax(40vw, 80vw)",
-                    // flexWrap: 'nowrap',
-
                 }}>
                 {images.map((item) => (
                     <ImageListItem key={item} sx={{display: 'flex', flexDirection: 'row'}}>

@@ -26,7 +26,7 @@ const Projects = (props) => {
                 {/* Additional project images */}
                 {props.currProj.images.length > 1 ? 
                     <Box sx={{
-                        minHeight:"100vh", 
+                        minHeight:"50vh", 
                         zIndex:"-1", 
                         maxWidth: "100%",
                     }}>
