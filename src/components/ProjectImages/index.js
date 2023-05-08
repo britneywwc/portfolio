@@ -18,10 +18,8 @@ const ProjectImages = (props) => {
         } else if (mobileMatches) {
             colsVal = 3;
         }
-        else if (mobileSmaller) {
+        else {
             colsVal = 2;
-        } else {
-            colsVal = 1;
         }
     } else {
         if (matches) {
@@ -35,7 +33,7 @@ const ProjectImages = (props) => {
         <Box
             display="flex"
             sx={{
-                bgcolor: "grey",
+                // bgcolor: "grey",
                 minWidth: '100vw',
                 justifyContent: 'center',
                 alignItems: 'center',

@@ -26,7 +26,7 @@ const projectsData =
         "id": 3,
         "title": "INTREPIDUS",
         "main_image": require("../assets/projects/p3/landing.png"),
-        "images": [require("../assets/projects/p3/1.png"), require("../assets/projects/p3/2.png"), require("../assets/projects/p3/3.png"), require("../assets/projects/p3/4.png"), require("../assets/projects/p3/5.png"), require("../assets/projects/p3/6.png"), require("../assets/projects/p3/7.png"), require("../assets/projects/p3/8.png"), require("../assets/projects/p3/9.png"), require("../assets/projects/p3/10.png"), require("../assets/projects/p3/11.png"), require("../assets/projects/p3/12.png")],
+        "images": [require("../assets/projects/p3/1.png"), require("../assets/projects/p3/2.png"), require("../assets/projects/p3/3.png"), require("../assets/projects/p3/4.png"), require("../assets/projects/p3/5.png"), require("../assets/projects/p3/6.png"), require("../assets/projects/p3/7.png"), require("../assets/projects/p3/8.png")],
         "description": "Intrepidus is a mobile application that helps astronauts shift their sleep according to their circadian rhythm, also included suggested meal and exercise times. Submission for NASA Space Apps Challenge 2020.",
         "stack": "Flutter / Dart / Firebase",
         "link": "https://github.com/daniaismadi/intrepidus",
