@@ -21,6 +21,7 @@ const ProjectInfo = (props) => {
                 <Card
                     sx={{
                         zIndex: -1,
+                        // WIP HERE
                         minWidth: '95vw',
                         height: '55vh',
                         backgroundColor: bgColor,  
