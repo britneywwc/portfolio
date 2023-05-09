@@ -17,16 +17,18 @@ const Projects = (props) => {
             <Grid container>
                 
                 <GridBreak/>
+
                 {/* Project title and info */}
-                <Box sx={{minHeight:"90vh"}}>
-                    <ProjectTitle currProj = {props.currProj}/>                                                                                
-                    <ProjectInfo currProj={props.currProj} bgColor={props.bgColor}/>                    
+                <Box sx={{minHeight:"6vw"}}>
+                    <ProjectTitle currProj = {props.currProj}/>                                                                           {/*  */}
                 </Box>                            
+
+                <ProjectInfo currProj={props.currProj} bgColor={props.bgColor}/>
 
                 {/* Additional project images */}
                 {props.currProj.images.length > 1 ? 
                     <Box sx={{
-                        minHeight:"50vh", 
+                        minHeight:"10%", 
                         zIndex:"-1", 
                         maxWidth: "100%",
                     }}>

@@ -30,6 +30,7 @@ const Routing = () => {
             <Box sx={{minHeight: '260vh'}} onClick={() => setShowNav(false)}>
                 <div id="placeholder"/>
                 <Element name="project-curify" className="element">
+                    <div id="mini-placeholder"/>
                     <SelectedWorks />
                     <Projects currProj={projectsData[0]} bgColor='#23CCB3'/>
                 </Element>

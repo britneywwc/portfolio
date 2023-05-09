@@ -11,20 +11,22 @@ const ProjectInfo = (props) => {
             spacing={0}
             direction="column" 
             alignItems="center" 
-            justify="center" 
-            // WIP HERE MARGIN TOP
-            marginTop="10vh" 
+            justify="center"  
             paddingX="2vw"
+            height="70%"
             >
-            <Grid item>
+            <Grid item 
+            // sx={{height:"80vh"}}
+            >
                 <Card
                     sx={{
                         zIndex: -1,
                         minWidth: '95vw',
-                        height: "60vh",
-                        backgroundColor: bgColor,                            
+                        height: '55vh',
+                        backgroundColor: bgColor,  
+                        marginTop: '2vh',                      
                     }}
-                    >  
+                    >
                     <CardMedia
                         component="img"
                         height="100%"

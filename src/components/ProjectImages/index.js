@@ -6,13 +6,12 @@ const ProjectImages = (props) => {
     const images = props.images;
     const matches = useMediaQuery('(min-width:1000px)');
     const mobileMatches = useMediaQuery('(min-width:800px)');
-    const mobileSmaller = useMediaQuery('(min-width:600px');
 
     const appType = props.appType;
     
     var colsVal;
 
-    if (appType == "mobile") {
+    if (appType === "mobile") {
         if (matches) {
             colsVal = 4;
         } else if (mobileMatches) {
@@ -46,7 +45,7 @@ const ProjectImages = (props) => {
                     paddingX: '2vw',
                 }}>
                 {images.map((item) => (
-                    <ImageListItem key={item} sx={{display: 'flex', flexDirection: 'row'}}>
+                    <ImageListItem key={item} sx={{display: 'flex', flexDirection: 'row', margin: '1%'}}>
                     <img
                         src={item}
                         srcSet={item}

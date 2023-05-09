@@ -148,14 +148,18 @@ code {
 }
 
 #placeholder {
-  min-height: 10vh;
+  min-height: 13vh;
+}
+
+#mini-placeholder {
+  min-height: 6vh;
 }
 
 .project__title__h1 {
   z-index: -1;
   font-family: 'PierSans';
   font-style: 'normal';
-  font-size: 2em;
+  font-size: calc(100% + 1vw);
   position: relative;
   left: 0;
   text-align: left;
@@ -171,18 +175,19 @@ code {
 
 .project__card__title__number {
   font-family: 'Migra';
-  font-size: calc(30% + 1vh);
+  font-size: calc(30% + 1vw);
   padding: 2vw;
 }
 
 .project__card__title__text {
   font-family: 'Migra';
   font-weight: normal;
-  font-size: calc(50% + 10vh);
+  font-size: calc(100% + 5vw);
   position: absolute;
   right: 0;
   padding-right: .5em;
   z-index: -1;
+  /* padding-bottom: 1vw; */
 }
 
 .project__info {
