@@ -235,10 +235,11 @@ code {
 /* Contact page */
 .contact__textbox {
     font-family: 'Migra';
-    font-style: normal;
-    /* font-size: 3em; */
+    font-style: normal;    
     font-size: calc(100% + 3vw);
     text-align: center;
+    justify-content: center;
+    align-items: center;
     letter-spacing: 3px;
 }
 

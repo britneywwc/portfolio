@@ -31,7 +31,7 @@ const Contact = (props) => {
         <div id="page">
 
             <div className="contact__textbox">
-                WANT TO GET IN TOUCH? <br/>
+                 WANT TO GET IN TOUCH?<br/>
                     
                     <ClickAwayListener onClickAway={handleTooltipClose}>
                         <div className="contact__container">
@@ -64,7 +64,7 @@ const Contact = (props) => {
 
                 <br/><br/>
 
-                THINKING SOMETHING MORE LONG TERM? <br/>
+                THINKING SOMETHING MORE LONG TERM?<br/>
                 DOWNLOAD MY                            
                 
                 <a href={resumePDF} download="britney-resume.pdf">
