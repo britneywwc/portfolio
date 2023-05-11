@@ -21,11 +21,10 @@ const ProjectInfo = (props) => {
                 <Card
                     sx={{
                         zIndex: -1,
-                        // WIP HERE
                         minWidth: '95vw',
                         height: '55vh',
                         backgroundColor: bgColor,  
-                        marginTop: '2vh',                      
+                        marginTop: '2vh',
                     }}
                     >
                     <CardMedia
@@ -33,7 +32,8 @@ const ProjectInfo = (props) => {
                         height="100%"
                         image={currProj.main_image}
                         alt="project image"
-                        sx={{objectFit: "contain" }}                            
+                        sx={{objectFit: "contain"}}     
+                                               
                     /> 
                 </Card>
 

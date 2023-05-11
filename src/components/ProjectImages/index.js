@@ -35,6 +35,7 @@ const ProjectImages = (props) => {
                 minWidth: '100vw',
                 justifyContent: 'center',
                 alignItems: 'center',
+                paddingTop: '2%',
             }}
             >
             <ImageList
