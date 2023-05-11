@@ -212,14 +212,12 @@ code {
 }
 
 .project__stack__link {
-  font-family: 'Migra';
+  font-family: 'NeueBit';
   font-style: italic;
   font-weight: normal;
   letter-spacing: 2px;
   position: relative;
   font-size: calc(30% + 1vw);
-
-
 }
 
 .project__stack__link a {

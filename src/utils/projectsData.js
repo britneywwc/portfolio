@@ -19,7 +19,7 @@ const projectsData =
         "description": "A chat bot of Michael Scott from the mockumentary series, The Office. Accessible via web app and chrome extension.",
         "stack": "ReactJS / GPT-3",
         "link": "https://github.com/britneywwc/gpt3-writer-starter",
-        "link_desc": "PROJECT",
+        "link_desc": "GITHUB",
         "app_type": "web",
     },
     {
@@ -30,7 +30,7 @@ const projectsData =
         "description": "Intrepidus is a mobile application that helps astronauts shift their sleep according to their circadian rhythm, also included suggested meal and exercise times. Submission for NASA Space Apps Challenge 2020.",
         "stack": "Flutter / Dart / Firebase",
         "link": "https://github.com/daniaismadi/intrepidus",
-        "link_desc": "PROJECT",
+        "link_desc": "GITHUB",
         "app_type": "mobile",
         
     },
@@ -42,7 +42,7 @@ const projectsData =
         "description": "A simple expense tracker application where users can add expenses and gives a summary overview of their expenses based on every month of the filtered years.",
         "stack": "ReactJS",
         "link": "https://github.com/britneywwc/expense-tracker",
-        "link_desc": "PROJECT",
+        "link_desc": "GITHUB",
         "app_type": "web",
     },
 
