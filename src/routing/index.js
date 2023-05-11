@@ -27,7 +27,7 @@ const Routing = () => {
             </Box>
 
             {/* CURIFY */}
-            <Box sx={{minHeight: '260vh'}} onClick={() => setShowNav(false)}>
+            <Box sx={{minHeight: '200vh'}} onClick={() => setShowNav(false)}>
                 <div id="placeholder"/>
                 <Element name="project-curify" className="element">
                     <div id="mini-placeholder"/>
