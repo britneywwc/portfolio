@@ -205,7 +205,7 @@ code {
 .project__stack {
   font-family: 'NeueBit';
   font-weight: bold;
-  font-size: calc(60% + 2vw);
+  font-size: calc(40% + 2vw);
   float: right;
   flex-wrap: wrap;
   max-width: 30%;
@@ -217,7 +217,8 @@ code {
   font-weight: normal;
   letter-spacing: 2px;
   position: relative;
-  font-size: calc(20% + 1vh);
+  font-size: calc(30% + 1vw);
+
 
 }
 
