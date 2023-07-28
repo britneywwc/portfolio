@@ -1,10 +1,14 @@
 # Portfolio
-A personal portfolio website to display all current and past projects. Built on ReactJS, deployed on Railway.
+A personal portfolio website to display all current and past projects. Built on ReactJS, deployed on Vercel.
+Visit the website [here](https://britneywang.com).
 
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+Install dependencies used in the app.
 
 ### `npm start`
 Runs the app in the development mode.\
