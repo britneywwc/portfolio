@@ -7,9 +7,8 @@ import linkedInIcon from '../../assets/icons/linkedin-icon.png';
 import githubIcon from '../../assets/icons/github-icon.png';
 import emailIcon from '../../assets/icons/email-icon.png';
 import cvIcon from '../../assets/icons/cv-icon.png';
-import resumePDF from '../../assets/resume/britney-resume.pdf';
 
-const Contact = (props) => {
+const Contact = () => {
     const email = "britneywwc@gmail.com";
 
     const [open, setOpen] = useState(false);
@@ -67,7 +66,7 @@ const Contact = (props) => {
                 THINKING SOMETHING MORE LONG TERM?<br/>
                 DOWNLOAD MY                            
                 
-                <a href={resumePDF} download="britney-resume.pdf">
+                <a href="https://drive.google.com/file/d/1MzM2bt_eBovz_bxsRP5_lDk1zbycVlPd/view" target="_blank" rel="noopener noreferrer">
 
                 <img className="contact__icon"src={cvIcon} alt="cv icon"/></a>
 

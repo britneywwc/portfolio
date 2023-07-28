@@ -6,14 +6,14 @@ const LandingPage = (props) => {
     return (
         <div id="page">
             <div className="landing__textbox">
-                HI, I AM A &nbsp;
+                HI, I AM BRITNEY. A&nbsp;
 
                 <span className="landing__underline">
                     SOFTWARE ENGINEER
                 </span>
 
                 &nbsp;
-                 WITH A BACKGROUND IN &nbsp;
+                WITH BACKGROUND IN &nbsp;
 
                  <span className="landing__highlight">
                     FRONT-END
@@ -22,7 +22,7 @@ const LandingPage = (props) => {
                  &nbsp;+ SOFTWARE DEVELOPMENT. &nbsp;             
                  
                 <br/><br/>
-                I WORK WITH <img src={reactIcon} alt="react icon"/> REACTJS, PYTHON + TYPESCRIPT. 
+                I WORK WITH <img src={reactIcon} alt="react icon"/> REACTJS, NODEJS, PYTHON + TYPESCRIPT. 
             </div>
         </div>
 
