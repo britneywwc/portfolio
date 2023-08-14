@@ -34,6 +34,7 @@ const ProjectImages = (props) => {
                 overflowX: 'scroll',
                 paddingTop: '2%',
                 maxHeight: `${imgHeight}`,
+                maxWidth: '50vw',
             }}>
             <ImageList
                 cols = {images.length}
