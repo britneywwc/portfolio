@@ -34,7 +34,6 @@ const ProjectImages = (props) => {
                 overflowX: 'scroll',
                 paddingTop: '2%',
                 maxHeight: `${imgHeight}`,
-                maxWidth: '50vw',
             }}>
             <ImageList
                 cols = {images.length}
@@ -51,8 +50,7 @@ const ProjectImages = (props) => {
                         key={item} 
                         sx={{
                             margin: '1%',
-                            flex: '0 0 auto',
-
+                            flex: '0 0 auto',                            
                         }}>
                     <img
                         src={item}
@@ -61,8 +59,9 @@ const ProjectImages = (props) => {
                         alt="project images"
                         style={{
                             borderRadius: '1%',
-                            maxWidth: '100%',
-                            maxHeight: '100%',
+                            // maxWidth: '100%',
+                            // height: `${imgHeight}`,
+                            height: '100%',
                             display: 'block',
                         }}
                         />
