@@ -21,8 +21,10 @@ const ProjectImages = (props) => {
     // MOBILE OR OTHER
     } else {
         if (appType === "mobile") {
+            console.log("Mobile view: Mobile app")
             imgHeight = '50vh'
         } else {
+            console.log("Mobile view: Desktop app")
             imgHeight = '60vw'
         }
     }
@@ -33,7 +35,8 @@ const ProjectImages = (props) => {
             sx={{
                 overflowX: 'scroll',
                 paddingTop: '2%',
-                maxHeight: `${imgHeight}`,
+                // height: `${imgHeight}`,
+                // height: '50vh',
             }}>
             <ImageList
                 cols = {images.length}
@@ -51,7 +54,7 @@ const ProjectImages = (props) => {
                         sx={{
                             margin: '1%',
                             flex: '0 0 auto',                            
-                            width: '50vw',
+                            width: '80%',
                             height: '100%'
                         }}>
                     <img
