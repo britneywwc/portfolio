@@ -27,7 +27,7 @@ const Routing = () => {
             </Box>
 
             {/* CURIFY */}
-            <Box sx={{minHeight: '200vh'}} onClick={() => setShowNav(false)}>
+            <Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
                 <div id="placeholder"/>
                 <Element name="project-curify" className="element">
                     <div id="mini-placeholder"/>
@@ -51,7 +51,7 @@ const Routing = () => {
             <div id="placeholder"/>
 
             {/* INTREPIDUS */}
-            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
+            <Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
                 <Element name="project-intrepidus" className="element">
                     <div id="placeholder"/>
                     <Projects currProj={projectsData[2]} bgColor='white'/>
@@ -60,7 +60,7 @@ const Routing = () => {
             <div id="placeholder"/><div id="placeholder"/>
 
             {/* EXPENSE TRACKER */}
-            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
+            <Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
                 <Element name="project-expense" className="element">
                     <div id="placeholder"/>
                     <Projects currProj={projectsData[3]} bgColor='#3f3f3f'/>

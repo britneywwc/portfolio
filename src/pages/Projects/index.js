@@ -8,14 +8,12 @@ import ProjectInfo from "../../components/ProjectInfo";
 
 import '../../index.css';
 import ProjectImages from "../../components/ProjectImages";
-import downIcon from '../../assets/icons/down-arrow.png';
 
 
 const Projects = (props) => {
     return (
         <div id="page__projects">
-            <Grid container>
-                
+            <Grid container>                
                 <GridBreak/>
 
                 {/* Project title and info */}
@@ -25,20 +23,19 @@ const Projects = (props) => {
 
                 <ProjectInfo currProj={props.currProj} bgColor={props.bgColor}/>
 
+                {/* <GridBreak/> */}
+            </Grid>
+
                 {/* Additional project images */}
                 {props.currProj.images.length > 1 ? 
                     <Box sx={{
                         minHeight:"10%", 
-                        zIndex:"-1", 
-                        maxWidth: "100%",
+                        zIndex:"-1",
                     }}>
                         <ProjectImages images={props.currProj.images} appType={props.currProj.app_type}/>
-                        
                     </Box> 
                 : null}
     
-            <GridBreak/>
-            </Grid>
         </div>
     )
 }

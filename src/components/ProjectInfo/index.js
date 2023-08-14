@@ -16,7 +16,6 @@ const ProjectInfo = (props) => {
             height="70%"
             >
             <Grid item 
-            // sx={{height:"80vh"}}
             >
                 <Card
                     sx={{

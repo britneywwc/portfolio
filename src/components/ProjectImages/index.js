@@ -8,45 +8,49 @@ const ProjectImages = (props) => {
     const mobileMatches = useMediaQuery('(min-width:800px)');
 
     const appType = props.appType;
-    
-    var colsVal;
+    var imgHeight;
 
-    if (appType === "mobile") {
-        if (matches) {
-            colsVal = 4;
-        } else if (mobileMatches) {
-            colsVal = 3;
-        }
-        else {
-            colsVal = 2;
-        }
-    } else {
-        if (matches) {
-            colsVal = 2;
+    // DESKTOP VIEW
+    if (matches) {
+        if (appType === "mobile") {
+            imgHeight = '50vw'
         } else {
-            colsVal = 1;
+            imgHeight = '50vh'
+        }
+    // MOBILE OR OTHER
+    } else {
+        if (appType === "mobile") {
+            imgHeight = '50vh'
+        } else {
+            imgHeight = '60vw'
         }
     }
 
     return (
-        <Box
-            display="flex"
+         <Box
+            display="flex"            
             sx={{
-                minWidth: '100vw',
-                justifyContent: 'center',
-                alignItems: 'center',
+                overflowX: 'scroll',
+                maxHeight: `${imgHeight}`,
                 paddingTop: '2%',
-            }}
-            >
+            }}>
             <ImageList
-                cols = {colsVal}
+                cols = {images.length}
                 sx={{          
                     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
                     transform: 'translateZ(0)',
                     paddingX: '2vw',
+                    display: 'flex',
+                    flexDirection: 'row',
+                    flexWrap: 'nowrap',
                 }}>
                 {images.map((item) => (
-                    <ImageListItem key={item} sx={{display: 'flex', flexDirection: 'row', margin: '1%'}}>
+                    <ImageListItem 
+                        key={item} 
+                        sx={{
+                            margin: '1%',
+                            flex: '0 0 auto',
+                        }}>
                     <img
                         src={item}
                         srcSet={item}
@@ -63,7 +67,7 @@ const ProjectImages = (props) => {
                     </ImageListItem>
                 ))}
                 </ImageList>
-        </Box> 
+        </Box>
     )
 }
 

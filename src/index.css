@@ -78,7 +78,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f5ebe0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 code {
@@ -98,6 +98,7 @@ code {
   display: flex;
   flex-direction: column;
   margin: auto 0;
+  overflow-x: hidden;
 }
 
 .curvedtext {
@@ -258,7 +259,10 @@ code {
 }
 
 
-
+/* TESTING */
+::-webkit-scrollbar {
+  width: 0px;
+}
 
 
 
