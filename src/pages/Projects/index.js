@@ -23,7 +23,6 @@ const Projects = (props) => {
 
                 <ProjectInfo currProj={props.currProj} bgColor={props.bgColor}/>
 
-                {/* <GridBreak/> */}
             </Grid>
 
                 {/* Additional project images */}

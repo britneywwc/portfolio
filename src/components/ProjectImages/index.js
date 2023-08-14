@@ -5,7 +5,6 @@ import { useMediaQuery, ImageList, ImageListItem, Box } from '@mui/material';
 const ProjectImages = (props) => {
     const images = props.images;
     const matches = useMediaQuery('(min-width:1000px)');
-    const mobileMatches = useMediaQuery('(min-width:800px)');
 
     const appType = props.appType;
     var imgHeight;
