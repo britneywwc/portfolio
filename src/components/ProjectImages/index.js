@@ -13,8 +13,10 @@ const ProjectImages = (props) => {
     if (matches) {
         if (appType === "mobile") {
             imgHeight = '50vw'
+
         } else {
             imgHeight = '50vh'
+
         }
     // MOBILE OR OTHER
     } else {
@@ -25,15 +27,13 @@ const ProjectImages = (props) => {
         }
     }
 
-    // Try
-
     return (
          <Box
             display="flex"            
             sx={{
                 overflowX: 'scroll',
-                maxHeight: `${imgHeight}`,
                 paddingTop: '2%',
+                maxHeight: `${imgHeight}`,
             }}>
             <ImageList
                 cols = {images.length}
@@ -51,6 +51,7 @@ const ProjectImages = (props) => {
                         sx={{
                             margin: '1%',
                             flex: '0 0 auto',
+
                         }}>
                     <img
                         src={item}
