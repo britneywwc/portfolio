@@ -51,6 +51,8 @@ const ProjectImages = (props) => {
                         sx={{
                             margin: '1%',
                             flex: '0 0 auto',                            
+                            width: '50vw',
+                            height: '100%'
                         }}>
                     <img
                         src={item}
@@ -60,8 +62,7 @@ const ProjectImages = (props) => {
                         style={{
                             borderRadius: '1%',
                             // maxWidth: '100%',
-                            // height: `${imgHeight}`,
-                            height: '100%',
+                            // height: '100%',
                             display: 'block',
                         }}
                         />
