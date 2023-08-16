@@ -34,6 +34,7 @@ const NavHeader = (props) => {
                     marginRight: '1%', 
                     position: 'fixed',
                     maxWidth: 'calc(100% + 20vw)',
+                    zIndex: 100,
                 }}
                 right="0"
             >

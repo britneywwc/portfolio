@@ -225,10 +225,21 @@ code {
   padding-left: 5px;
 }
 
-.down__icon {
+.project__container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow-x: scroll;
+  width: 100%;
+  padding-top: 1em;
+  align-items: center;  
+}
+
+.project__card {
+  flex-shrink: 0;
+  border-radius: 1%;
+  margin-left: 2%;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 
@@ -257,6 +268,8 @@ code {
   padding: 0px 10px;
   vertical-align: middle;
 }
+
+
 
 
 

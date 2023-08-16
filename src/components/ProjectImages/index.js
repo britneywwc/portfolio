@@ -1,62 +1,66 @@
 import React from "react";
 import { useMediaQuery, ImageList, ImageListItem, Box } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-around',
+      overflow: 'hidden',
+    },
+    imageList: {
+      flexWrap: 'nowrap',
+      // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+      transform: 'translateZ(0)',
+    },
+  }));
 
 const ProjectImages = (props) => {
     const images = props.images;
     const matches = useMediaQuery('(min-width:1000px)');
 
     const appType = props.appType;
-    var imgHeight;
+    var imgHeight = "100%";
+    var imgWidth = "100%";
 
-    // DESKTOP VIEW
-    if (matches) {
-        if (appType === "mobile") {
-            imgHeight = '50vw'
-
-        } else {
-            imgHeight = '50vh'
-
-        }
-    // MOBILE OR OTHER
-    } else {
-        if (appType === "mobile") {
-            console.log("Mobile view: Mobile app")
-            imgHeight = '50vh'
-        } else {
-            console.log("Mobile view: Desktop app")
-            imgHeight = '60vw'
-        }
-    }
+    const classes = useStyles();
 
     return (
-         <Box
-            display="flex"            
-            sx={{
-                overflowX: 'scroll',
-                paddingTop: '2%',
-                // height: `${imgHeight}`,
-                // height: '50vh',
-            }}>
+        //  <Box
+        //     // display="flex"            
+        //     sx={{
+        //         overflowX: 'scroll',
+        //         // paddingTop: '2%',
+        //         // height: '40vh',
+
+        //         display: "flex",
+        //         flexWrap: "wrap",
+        //         justifyContent: "space-around",
+        //         overflow: "hidden",
+        //     }}>
+        <div className={classes.root}>
             <ImageList
-                cols = {images.length}
-                sx={{          
-                    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
-                    transform: 'translateZ(0)',
-                    paddingX: '2vw',
-                    display: 'flex',
-                    flexDirection: 'row',
-                    flexWrap: 'nowrap',
-                }}>
+                className={classes.imageList}
+                cols = {2.5}
+                // sx={{          
+                //     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
+                //     transform: 'translateZ(0)',
+                //     paddingX: '2vw',
+                //     flexWrap: 'nowrap',
+                //     // flexDirection: 'row',
+                //     // display: 'flex',     // Sets display to original size
+                // }}
+                >
                 {images.map((item) => (
                     <ImageListItem 
                         key={item} 
-                        sx={{
-                            margin: '1%',
-                            flex: '0 0 auto',                            
-                            width: '80%',
-                            height: '100%'
-                        }}>
+                        // sx={{
+                        //     margin: '1%',
+                        //     flex: '0 0 auto',
+                        // }}
+                        >
                     <img
                         src={item}
                         srcSet={item}
@@ -64,16 +68,16 @@ const ProjectImages = (props) => {
                         alt="project images"
                         style={{
                             borderRadius: '1%',
-                            // maxWidth: '100%',
-                            // height: '100%',
-                            display: 'block',
+                            // display: 'block',
+                            // objectFit: 'contain',    // Sets the image as original sizes
                         }}
                         />
 
                     </ImageListItem>
                 ))}
                 </ImageList>
-        </Box>
+            </div>
+        // </Box>
     )
 }
 

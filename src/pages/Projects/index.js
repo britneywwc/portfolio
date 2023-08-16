@@ -8,6 +8,7 @@ import ProjectInfo from "../../components/ProjectInfo";
 
 import '../../index.css';
 import ProjectImages from "../../components/ProjectImages";
+import ProjectScroll from "../../components/ProjectScroll";
 
 
 const Projects = (props) => {
@@ -25,15 +26,16 @@ const Projects = (props) => {
 
             </Grid>
 
-                {/* Additional project images */}
-                {props.currProj.images.length > 1 ? 
-                    <Box sx={{
-                        minHeight:"10%", 
-                        zIndex:"-1",
-                    }}>
-                        <ProjectImages images={props.currProj.images} appType={props.currProj.app_type}/>
-                    </Box> 
-                : null}
+            {/* Additional project images */}
+            {props.currProj.images.length > 1 ? 
+                <Box sx={{
+                    minHeight:"10%", 
+                    zIndex:"-1",
+                }}>
+                    {/* <ProjectImages images={props.currProj.images} appType={props.currProj.app_type}/> */}
+                    <ProjectScroll images={props.currProj.images} appType={props.currProj.app_type} />
+                </Box> 
+            : null}
     
         </div>
     )
