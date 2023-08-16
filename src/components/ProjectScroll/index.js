@@ -4,25 +4,25 @@ import { useMediaQuery } from '@mui/material';
 const ProjectScroll = props => {
     const images = props.images;
     const appType = props.appType;
-    const mobileView = useMediaQuery('(min-width:800px)');
+    const mobileView = useMediaQuery('(max-width:800px)');
 
     var imgHeight, imgWidth;
 
     if (appType === "web") {
         if (mobileView) {
-            imgHeight = '60vh';
-            imgWidth = '60vw';
-        } else {
-            imgHeight = '60vw';
-            imgWidth = '60vh';
-        }
-    } else {
-        if (mobileView) {
-            imgHeight = '50vw';
-            imgWidth = '50vh';
+            imgHeight = '30vh';
+            imgWidth = '90vw';
         } else {
             imgHeight = '50vh';
             imgWidth = '50vw';
+        }
+    } else {
+        if (mobileView) {
+            imgHeight = '60vh';
+            imgWidth = '70vw';
+        } else {
+            imgHeight = '50vw';
+            imgWidth = '50vh';
         }
     }
     
