@@ -7,7 +7,6 @@ import ProjectTitle from '../../components/ProjectTitle';
 import ProjectInfo from "../../components/ProjectInfo";
 
 import '../../index.css';
-import ProjectImages from "../../components/ProjectImages";
 import ProjectScroll from "../../components/ProjectScroll";
 
 
@@ -32,7 +31,6 @@ const Projects = (props) => {
                     minHeight:"10%", 
                     zIndex:"-1",
                 }}>
-                    {/* <ProjectImages images={props.currProj.images} appType={props.currProj.app_type}/> */}
                     <ProjectScroll images={props.currProj.images} appType={props.currProj.app_type} />
                 </Box> 
             : null}

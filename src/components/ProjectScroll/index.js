@@ -4,20 +4,20 @@ import { useMediaQuery } from '@mui/material';
 const ProjectScroll = props => {
     const images = props.images;
     const appType = props.appType;
-    const desktopView = useMediaQuery('(min-width:1000px)');
+    const mobileView = useMediaQuery('(min-width:800px)');
 
     var imgHeight, imgWidth;
 
     if (appType === "web") {
-        if (desktopView) {
-            imgHeight = '50vh';
-            imgWidth = '50vw';
+        if (mobileView) {
+            imgHeight = '60vh';
+            imgWidth = '60vw';
         } else {
-            imgHeight = '50vw';
-            imgWidth = '50vh';
+            imgHeight = '60vw';
+            imgWidth = '60vh';
         }
     } else {
-        if (desktopView) {
+        if (mobileView) {
             imgHeight = '50vw';
             imgWidth = '50vh';
         } else {
