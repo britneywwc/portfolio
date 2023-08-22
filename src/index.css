@@ -231,17 +231,8 @@ code {
   width: 100%;
   padding-top: 1em;
   align-items: center;  
+  padding-left: 1em;
 }
-
-.project__card {
-  flex-shrink: 0;
-  border-radius: 1%;
-  margin-left: 2%;
-  background-size: cover;  
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
 
 /* Contact page */
 .contact__textbox {
