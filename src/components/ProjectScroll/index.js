@@ -1,18 +1,13 @@
 import React from "react"
 import { useMediaQuery } from '@mui/material';
-import {CardMedia} from "@mui/material";
+import { CardMedia } from "@mui/material";
 
 const ProjectScroll = props => {
     const images = props.images;
     const appType = props.appType;
     const mobileView = useMediaQuery('(max-width:800px)');
 
-    const portraitView = window.innerHeight > window.innerWidth ? true : false;
-    console.log('h:', window.innerHeight, 'w:', window.innerWidth, portraitView);
-
     var imgHeight, imgWidth;
-
- 
 
     if (appType === "web") {
         if (mobileView) {
@@ -45,8 +40,7 @@ const ProjectScroll = props => {
                         height: `${imgHeight}`,
                         borderRadius: '5px',
                         margin: '.5em',
-                    }}     
-                                               
+                    }}                                                    
                 /> 
             ))}
         </div>
