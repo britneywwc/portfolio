@@ -32,20 +32,7 @@ const projectsData =
         "link": "https://github.com/daniaismadi/intrepidus",
         "link_desc": "GITHUB",
         "app_type": "mobile",
-        
     },
-    {
-        "id": 4,
-        "title": "EXPENSE TRACKER",
-        "main_image": require("../assets/projects/p4/landing.png"),
-        "images": [require("../assets/projects/p4/p1.png"), require("../assets/projects/p4/p2.png")],
-        "description": "A simple expense tracker application where users can add expenses and gives a summary overview of their expenses based on every month of the filtered years.",
-        "stack": "ReactJS",
-        "link": "https://github.com/britneywwc/expense-tracker",
-        "link_desc": "GITHUB",
-        "app_type": "web",
-    },
-
 ]
 
 export default projectsData;

@@ -58,14 +58,6 @@ const Routing = () => {
                 </Element>
             </Box>
             <div id="placeholder"/><div id="placeholder"/>
-
-            {/* EXPENSE TRACKER */}
-            <Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
-                <Element name="project-expense" className="element">
-                    <div id="placeholder"/>
-                    <Projects currProj={projectsData[3]} bgColor='#3f3f3f'/>
-                </Element>
-            </Box>
             
             <Box 
                 display="flex"
