@@ -20,9 +20,11 @@ const LandingPage = (props) => {
                  </span>
 
                  &nbsp;+ SOFTWARE DEVELOPMENT. &nbsp;             
-                 
+
                 <br/><br/>
                 I WORK WITH <img src={reactIcon} alt="react icon"/> REACTJS, NODEJS, PYTHON + TYPESCRIPT. 
+                <br/>
+                CURRENTLY A SOFTWARE ENGINEER @ CANONICAL.
             </div>
         </div>
 
