@@ -16,13 +16,13 @@ const LandingPage = (props) => {
                 WITH BACKGROUND IN &nbsp;
 
                  <span className="landing__highlight">
-                    FRONT-END
+                    FULL-STACK
                  </span>
 
-                 &nbsp;+ SOFTWARE DEVELOPMENT. &nbsp;             
+                 &nbsp;WEB DEVELOPMENT. &nbsp;             
 
                 <br/><br/>
-                I WORK WITH <img src={reactIcon} alt="react icon"/> REACTJS, NODEJS, PYTHON + TYPESCRIPT. 
+                I WORK WITH <img src={reactIcon} alt="react icon"/> REACTJS, PYTHON + TYPESCRIPT. 
                 <br/>
                 CURRENTLY A SOFTWARE ENGINEER @ CANONICAL.
             </div>
