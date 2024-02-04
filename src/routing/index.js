@@ -13,67 +13,60 @@ import projectsData from '../utils/projectsData';
 
 
 const Routing = () => {
-    const [showNav, setShowNav] = useState(false);
+	const [showNav, setShowNav] = useState(false);
 
-    return (
-        <Box sx={{minWidth: '100vw', maxWidth: '100%'}}>
-            <NavHeader showNav={showNav} setShowNav={setShowNav}/>
-            {/* <CurvedText/> */}
-            
-            <Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
-                <Element name="home" className="element" >
-                    <Landing/>
-                </Element>
-            </Box>
+	return (
+		<Box sx={{minWidth: '100vw', maxWidth: '100%'}}>
+			<NavHeader showNav={showNav} setShowNav={setShowNav}/>
+			{/* <CurvedText/> */}
+			<Box sx={{minHeight: '130vh'}} onClick={() => setShowNav(false)}>
+				<Element name="home" className="element" >
+					<Landing/>
+				</Element>
+			</Box>
 
-            {/* CURIFY */}
-            <Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
-                <div id="placeholder"/>
-                <Element name="project-curify" className="element">
-                    <div id="mini-placeholder"/>
-                    <SelectedWorks />
-                    <Projects currProj={projectsData[0]} bgColor='#23CCB3'/>
-                </Element>
-            </Box>
-            <div id="placeholder"/><div id="placeholder"/>
-            
+			{/* CURIFY */}
+			<Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
+				<div id="placeholder"/>
+				<Element name="project-curify" className="element">
+					<div id="mini-placeholder"/>
+					<SelectedWorks />
+					<Projects currProj={projectsData[0]} bgColor='#23CCB3'/>
+				</Element>
+			</Box>
+			<div id="placeholder"/><div id="placeholder"/>
 
+			{/* MICHAEL SCOTT GPT-3 */}
+			<Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
+				<Element name="project-gpt" className="element">
+					<div id="placeholder"/>
+					<Projects currProj={projectsData[1]} bgColor='black'/>
+				</Element>
+			</Box>
 
-            {/* MICHAEL SCOTT GPT-3 */}
-            <Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
-                <Element name="project-gpt" className="element">
-                    <div id="placeholder"/>
-                    <Projects currProj={projectsData[1]} bgColor='black'/>
-                </Element>
-            </Box>
+			{/* can make the placeholder take more space */}
+			<div id="placeholder"/>
 
-            {/* can make the placeholder take more space */}
-            <div id="placeholder"/>
-
-            {/* INTREPIDUS */}
-            <Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
-                <Element name="project-intrepidus" className="element">
-                    <div id="placeholder"/>
-                    <Projects currProj={projectsData[2]} bgColor='white'/>
-                </Element>
-            </Box>
-            <div id="placeholder"/><div id="placeholder"/>
-            
-            <Box 
-                display="flex"
-                justifyContent="center"
-                alignItems="center"
-                minHeight="100vh"
-                onClick={() => setShowNav(false)}>
-                <Element name="contact" className="element">
-                    <Contact/>
-                </Element>
-            </Box>
-        
-          
-        </Box>
-
-    )
+			{/* INTREPIDUS */}
+			<Box sx={{minHeight: '100vh'}} onClick={() => setShowNav(false)}>
+				<Element name="project-intrepidus" className="element">
+					<div id="placeholder"/>
+					<Projects currProj={projectsData[2]} bgColor='white'/>
+				</Element>
+			</Box>
+			<div id="placeholder"/><div id="placeholder"/>
+			<Box 
+				display="flex"
+				justifyContent="center"
+				alignItems="center"
+				minHeight="100vh"
+				onClick={() => setShowNav(false)}>
+				<Element name="contact" className="element">
+					<Contact/>
+				</Element>
+			</Box>
+		</Box>
+	)
 }
 
 export default Routing

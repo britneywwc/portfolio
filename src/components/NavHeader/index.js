@@ -9,78 +9,69 @@ const NavHeader = (props) => {
     const setShowNav = props.setShowNav;
 
     const theme = createTheme({
-        palette: {
-            primary: {
-                main: "#000",
-                secondary: "#f5ebe0",
-            }
-        },
-        });
+			palette: {
+				primary: {
+					main: "#000",
+					secondary: "#f5ebe0",
+				}
+			},
+		});
 
-    const handleOnMouseOver = () => {        
-        setShowNav(true);
+    const handleOnMouseOver = () => {
+			setShowNav(true);
     }
 
     const handleOnClick = () => {
-        setShowNav(false);
-    }    
+			setShowNav(false);
+    }
 
     return (
-        <ThemeProvider theme={theme}>
-            <Box 
-                sx={{ 
-                    '& > :not(style)': { m: 1 }, 
-                    marginTop: '1%', 
-                    marginRight: '1%', 
-                    position: 'fixed',
-                    maxWidth: 'calc(100% + 20vw)',
-                    zIndex: 100,
-                }}
-                right="0"
-            >
-                <Grid container spacing={2} sx={{ maxWidth: "100% !important" }}>
-                    <Grid item sx={{maxWidth: "100%"}}>
-                    <StyledNavButton variant="outlined" disableRipple={true}>
-                        <Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}
-                         onClick={handleOnClick}>HOME</Link>
-                    </StyledNavButton>
+			<ThemeProvider theme={theme}>
+				<Box
+					sx={{
+						'& > :not(style)': { m: 1 },
+						marginTop: '1%',
+						marginRight: '1%',
+						position: 'fixed',
+						maxWidth: 'calc(100% + 20vw)',
+						zIndex: 100,
+					}}
+					right="0"
+				>
+					<Grid container spacing={2} sx={{ maxWidth: "100% !important" }}>
+						<Grid item sx={{maxWidth: "100%"}}>
+						<StyledNavButton variant="outlined" disableRipple={true}>
+								<Link activeClass="active" className="home" to="home" spy={true} smooth={true} duration={500}
+									onClick={handleOnClick}>HOME</Link>
+						</StyledNavButton>
+					</Grid>
 
+					<Grid item sx={{maxWidth: "100%"}}>
+						<StyledNavButton
+							variant="outlined"
+							disableRipple={true}
+							onClick={handleOnMouseOver}
+							onMouseOver={handleOnMouseOver}
+							sx={{
+								backgroundColor: showNav ? 'black' : 'rgba(245,235,224, 0.5)',
+								color: showNav ? 'white' : 'black',
+							}}
+						>
+							PROJECTS
+						</StyledNavButton>
+						{showNav ? <NavProjects handleOnClick={handleOnClick}/> : null }
+					</Grid>
 
-                </Grid>
-
-                <Grid item sx={{maxWidth: "100%"}}>
-                    <StyledNavButton 
-                        variant="outlined"  
-                        disableRipple={true}
-                        onClick={handleOnMouseOver}
-                        onMouseOver={handleOnMouseOver}
-                        sx={{
-                            backgroundColor: showNav ? 'black' : 'rgba(245,235,224, 0.5)',
-                            color: showNav ? 'white' : 'black',
-                        }}
-                     >
-                        PROJECTS
-                     </StyledNavButton> 
-
-                     {showNav ? <NavProjects handleOnClick={handleOnClick}/> : null } 
-
-                                      
-                </Grid>                                                
-                    
-                <Grid item sx={{maxWidth: "100%"}}>
-                    <StyledNavButton variant="outlined" disableRipple={true}>
-                        <Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}
-                        onClick={handleOnClick}>CONTACT</Link>
-                    </StyledNavButton>
-                </Grid>
-                
-            </Grid>    
-        </Box>
-        
-
-        </ThemeProvider>
-
-    )
+					<Grid item sx={{maxWidth: "100%"}}>
+						<StyledNavButton variant="outlined" disableRipple={true}>
+							<Link activeClass="active" className="contact" to="contact" spy={true} smooth={true} duration={500}
+							onClick={handleOnClick}>CONTACT</Link>
+						</StyledNavButton>
+					</Grid>
+				</Grid>
+			</Box>
+		</ThemeProvider>
+	)
 }
 
 export default NavHeader;
