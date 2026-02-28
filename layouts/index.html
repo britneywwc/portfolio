@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<h1>About</h1>
+
+<p>
+  Hi, I am Britney. A full-stack software engineer with an interest in backend and DevOps. <br/>
+  Currently SWE @ Canonical. <a href="about/">(more)</a>
+</p>
+<br/>
+
+<h1>Work</h1>
+
+<div class="work-list">
+{{ with .Site.GetPage "/work" }}
+    {{ range first 3 (sort .Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+        <div class="post">
+            <p>
+                <div class="date">{{ .Date | time.Format ":date_medium" }}</div>
+                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+                {{ .Summary }}
+            </p>
+        </div>    
+    {{ end }}
+{{ end }}
+</div>
+
+<h1>Projects</h1>
+
+<div class="projects-list">
+{{ with .Site.GetPage "/projects" }}
+    {{ range first 3 (sort .Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+        <div class="post">
+            <p>
+                <div class="date">{{ .Date | time.Format ":date_medium" }}</div>
+                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+                {{ .Summary }}
+            </p>
+        </div>    
+    {{ end }}
+{{ end }}
+</div>
+
+
+{{ end }}

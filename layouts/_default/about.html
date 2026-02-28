@@ -1,0 +1,20 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  
+  {{ .Content }}
+  
+  {{ with .Site.GetPage "/work" }}
+    {{ if .Pages }}
+      <h2>Work Experience</h2>
+      {{ range (sort .Pages "Date" "desc") }}
+        <div class="work-item">
+          <p>
+            <div class="date">{{ .Date | time.Format "January 2006" }}</div>
+            <h3>{{ .Title }}</h3>
+            {{ .Content }}
+          </p>
+        </div>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
