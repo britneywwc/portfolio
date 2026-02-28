@@ -1,8 +1,7 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
 
   <section class="about">
-    {{ .Content }}
+    <p>{{ .Content }}</p>
   </section>
 
   {{ $work := .Site.GetPage "resume/work-experience" }}

@@ -4,6 +4,9 @@ theme = "hugo-theme-console"
 languageCode = "en-us"
 
 [params]
+  author = "Britney Wang"
+  description = "Software engineer portfolio"
+
   # Cutting off the page title to two chars for mobile (console-demo -> co)
   titleCutting = true
 
