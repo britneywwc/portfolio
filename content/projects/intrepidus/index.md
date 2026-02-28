@@ -1,9 +1,9 @@
 +++
-title = "Curify"
-date = 2022-01-15
+title = "Intrepidus"
+date = 2020-01-15
 draft = false
-description="Curify generates a list of curated Netflix shows and movies based on users’ own selected Spotify playlist."
-github="https://github.com/Apple-Piethon/curify"
+description="Sleep Shifting Scheduler Application for NASA Space Apps Hackathon."
+github="https://github.com/daniaismadi/intrepidus"
 +++
 
 Short description of the project shown in the listing.

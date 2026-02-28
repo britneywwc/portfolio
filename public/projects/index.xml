@@ -6,13 +6,27 @@
     <description>Recent content in Projects on britney-wang</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Curify</title>
-      <link>http://localhost:1313/projects/curify/</link>
-      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/curify/</guid>
+      <title>Bauer</title>
+      <link>http://localhost:1313/projects/bauer/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/bauer/</guid>
+      <description>&lt;p&gt;Bauer is a tool that automates Business-As-Usual (BAU) tasks using Copilot.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Overview&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Bauer parses Google document suggestions, creates a LLM-readable file with instructions and actionable suggestions, then generates a PR automatically through Copilot CLI.&lt;/p&gt;&#xA;&lt;h2 id=&#34;tech-stack&#34;&gt;Tech stack&lt;/h2&gt; &lt;p&gt;Go, Copilot CLI, GitHub CLI, Google API&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Meowatch</title>
+      <link>http://localhost:1313/projects/meowatch/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/meowatch/</guid>
+      <description>&lt;p&gt;Short description of the project shown in the listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt; &lt;p&gt;More comprehensive information about the project appears here when accessed directly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio 2.0</title>
+      <link>http://localhost:1313/projects/portfolio-v2/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/portfolio-v2/</guid>
       <description>&lt;p&gt;Short description of the project shown in the listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt; &lt;p&gt;More comprehensive information about the project appears here when accessed directly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
@@ -20,6 +34,41 @@
       <link>http://localhost:1313/projects/ms-gpt3/</link>
       <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/ms-gpt3/</guid>
+      <description>&lt;p&gt;Short description of the project shown in the listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt; &lt;p&gt;More comprehensive information about the project appears here when accessed directly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Ready2Eat</title>
+      <link>http://localhost:1313/projects/ready2eat/</link>
+      <pubDate>Sun, 15 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ready2eat/</guid>
+      <description>&lt;p&gt;Short description of the project shown in the listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt; &lt;p&gt;More comprehensive information about the project appears here when accessed directly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Curify</title>
+      <link>http://localhost:1313/projects/curify/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/curify/</guid>
+      <description>&lt;p&gt;Short description of the project shown in the listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt; &lt;p&gt;More comprehensive information about the project appears here when accessed directly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio 1.0</title>
+      <link>http://localhost:1313/projects/portfolio-v1/</link>
+      <pubDate>Sat, 15 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/portfolio-v1/</guid>
+      <description>&lt;p&gt;Short description of the project shown in the listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt; &lt;p&gt;More comprehensive information about the project appears here when accessed directly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Ads Decoder</title>
+      <link>http://localhost:1313/projects/ads-decoder/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/ads-decoder/</guid>
+      <description>&lt;p&gt;Short description of the project shown in the listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt; &lt;p&gt;More comprehensive information about the project appears here when accessed directly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Intrepidus</title>
+      <link>http://localhost:1313/projects/intrepidus/</link>
+      <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/intrepidus/</guid>
       <description>&lt;p&gt;Short description of the project shown in the listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt; &lt;p&gt;More comprehensive information about the project appears here when accessed directly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>

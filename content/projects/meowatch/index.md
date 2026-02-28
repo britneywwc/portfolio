@@ -1,9 +1,9 @@
 +++
-title = "Curify"
-date = 2022-01-15
+title = "Meowatch"
+date = 2026-02-01
 draft = false
-description="Curify generates a list of curated Netflix shows and movies based on users’ own selected Spotify playlist."
-github="https://github.com/Apple-Piethon/curify"
+description = "Cat monitoring system on Raspberry Pi 4."
+github="https://github.com/britneywwc/meowatch"
 +++
 
 Short description of the project shown in the listing.

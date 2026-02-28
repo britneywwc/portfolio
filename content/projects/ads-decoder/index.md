@@ -1,9 +1,9 @@
 +++
-title = "Curify"
-date = 2022-01-15
+title = "Ads Decoder"
+date = 2021-02-01
 draft = false
-description="Curify generates a list of curated Netflix shows and movies based on users’ own selected Spotify playlist."
-github="https://github.com/Apple-Piethon/curify"
+description="Generating Symbolic Bounding Boxes and Labels for the given Images and Descriptors."
+github="https://github.com/yuhueilee/Ads-Decoder"
 +++
 
 Short description of the project shown in the listing.

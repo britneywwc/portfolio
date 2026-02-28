@@ -1,9 +1,9 @@
 +++
-title = "Curify"
+title = "Portfolio 1.0"
 date = 2022-01-15
 draft = false
-description="Curify generates a list of curated Netflix shows and movies based on users’ own selected Spotify playlist."
-github="https://github.com/Apple-Piethon/curify"
+description="Personal portfolio website that displays current and existing work. Built on React."
+github="https://github.com/britneywwc/portfolio-archive"
 +++
 
 Short description of the project shown in the listing.

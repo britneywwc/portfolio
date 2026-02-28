@@ -33,12 +33,13 @@
       <div class="projects-list">
         {{ range .Pages }}
           <div class="project-item">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <strong>
+              <a href="{{ .Permalink }}">
+                {{ .Title }}
+              </a>
+            </strong>
             <p>
               {{ .Params.description }}
-              {{ if .Params.github }}
-                <a href="{{ .Params.github }}" target="_blank">GitHub</a>
-              {{ end }}
             </p>
           </div>
         {{ end }}
