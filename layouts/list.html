@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  <section class="about">
+    {{ .Content }}
+  </section>
+
+  {{ $work := .Site.GetPage "resume/work-experience" }}
+  {{ with $work }}
+    <h1>Work Experience</h1>
+    <div class="posts-list">
+      {{ range (sort .Pages "Params.start_date" "desc") }}
+        <div class="post">
+          <div class="date">
+            {{ .Params.start_date | time.Format "Jan 2006" }} - 
+            {{ if .Params.end_date }}
+              {{ .Params.end_date | time.Format "Jan 2006" }}
+            {{ else }}
+              Present
+            {{ end }}
+          </div>
+          <h2>{{ .Title }}</h2>
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{ $projects := .Site.GetPage "projects" }}
+  {{ with $projects }}
+    <h1>Projects</h1>
+    {{ if .Pages }}
+      <div class="projects-list">
+        {{ range .Pages }}
+          <div class="project-item">
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <p>
+              {{ .Params.description }}
+              {{ if .Params.github }}
+                <a href="{{ .Params.github }}" target="_blank">GitHub</a>
+              {{ end }}
+            </p>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+  
+{{ end }}

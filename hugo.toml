@@ -12,13 +12,9 @@ languageCode = "en-us"
   animateStyle = "animated zoomIn fast" 
 
   [[params.navlinks]]
-  name = "about/"
-  url = "about/"
+  name = "resume/"
+  url = "resume/"
 
-  [[params.navlinks]]
-  name = "work/"
-  url = "work/"
-  
   [[params.navlinks]]
   name = "projects/"
   url = "projects/"

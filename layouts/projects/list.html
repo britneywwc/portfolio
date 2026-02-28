@@ -1,0 +1,22 @@
+{{ define "main" }}
+  {{ $projects := .Site.GetPage "projects" }}
+  {{ with $projects }}
+    <h1>Projects</h1>
+    {{ if .Pages }}
+      <div class="projects-list">
+        {{ range .Pages }}
+          <div class="project-item">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p>
+              {{ .Params.description }}
+              {{ if .Params.github }}
+                <a href="{{ .Params.github }}" target="_blank">(GitHub)</a>
+              {{ end }}
+            </p>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+  
+{{ end }}

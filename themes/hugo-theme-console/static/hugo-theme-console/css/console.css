@@ -229,7 +229,7 @@ figure {
 
 .posts-list {
     position: relative;
-    padding-left: 130px;
+    padding-left: 220px;
     top: 0;
 }
 
@@ -244,7 +244,7 @@ figure {
     display: inline-block;
     position: absolute;
     left: 0px;
-    width: 130px;
+    width: 220px;
     z-index: 400;
     padding-top: 0;
 }
@@ -299,7 +299,7 @@ figure {
         display: inline-block;
         position: absolute;
         left: 0px;
-        width: 150px;
+        width: 180px;
         z-index: 400;
         font-weight: bold;
         padding-top: 0;

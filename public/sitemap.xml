@@ -5,28 +5,47 @@
         
         <url>
             <loc>http://localhost:1313/</loc>
-            <lastmod>2026-02-28T16:45:35+08:00</lastmod>
+            <lastmod>2026-02-28T16:30:08+08:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/resume/</loc>
+            <lastmod>2026-02-28T16:30:08+08:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/projects/curify/</loc>
+            <lastmod>2024-01-15T00:00:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/projects/ms-gpt3/</loc>
+            <lastmod>2024-01-15T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
             <loc>http://localhost:1313/projects/</loc>
-            <lastmod>2026-02-28T16:45:35+08:00</lastmod>
+            <lastmod>2024-01-15T00:00:00+00:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:1313/work/</loc>
-            <lastmod>2026-02-28T16:44:55+08:00</lastmod>
+            <loc>http://localhost:1313/resume/achievements/</loc>
         </url>
         
     
         
         <url>
-            <loc>http://localhost:1313/about/</loc>
-            <lastmod>2026-02-28T16:30:08+08:00</lastmod>
+            <loc>http://localhost:1313/resume/work-experience/swe-associate/</loc>
         </url>
         
     
@@ -38,7 +57,37 @@
     
         
         <url>
+            <loc>http://localhost:1313/resume/work-experience/intern-dev/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/resume/education/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/resume/work-experience/swe-i/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/resume/work-experience/intern-swe/</loc>
+        </url>
+        
+    
+        
+        <url>
             <loc>http://localhost:1313/tags/</loc>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/resume/work-experience/</loc>
         </url>
         
     
