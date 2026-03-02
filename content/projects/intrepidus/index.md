@@ -5,7 +5,9 @@ draft = false
 description="Sleep Shifting Scheduler Application for NASA Space Apps Hackathon."
 github="https://github.com/daniaismadi/intrepidus"
 +++
-Intrepidus is the optimal companion for an astronaut in space. Simply enter details like whether you are a morning or night person, the times you will dock and undock at the International Space Station, and your console shifts and Intrepidus will generate a personalised sleep schedule, meal plans and daily exercise plans for you in seconds!
+Intrepidus is the optimal companion for an astronaut in space. 
+
+Simply enter details like whether you are a morning or night person, the times you will dock and undock at the International Space Station, and your console shifts and Intrepidus will generate a personalised sleep schedule, meal plans and daily exercise plans for you in seconds!
 
 _deep sleep in deep space, our [submission for NASA Space Apps 2020](https://2020.spaceappschallenge.org/challenges/sustain/sleep-shift-scheduling-tool/teams/intrepidus/project/)_
 

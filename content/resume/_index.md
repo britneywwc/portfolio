@@ -4,7 +4,7 @@ draft = false
 title = 'Resume'
 layout = 'list'
 +++
-```
+```python {lineNos=inline tabWidth=2}
 languages = ["python", "go", "javascript", "html", "scss"]
 frameworks = ["react", "flask""]
 tools = ["hugo", "jinja", "postgresql"]

@@ -19,5 +19,9 @@ languageCode = "en-us"
     url = "projects/"
 
   [[params.navlinks]]
-  name = "resume/"
-  url = "resume/"  
+    name = "resume/"
+    url = "resume/"
+
+  [[params.navlinks]]
+    name = "bookshelf/"
+    url = "bookshelf/"

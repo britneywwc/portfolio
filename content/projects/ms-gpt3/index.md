@@ -2,7 +2,7 @@
 title = "Michael Scott GPT-3"
 date = 2024-01-15
 draft = false
-description = "A chat bot of Michael Scott from the mockumentary series, The Office. Accessible via web app and chrome extension."
+description = "A chat bot of Michael Scott from the mockumentary series, The Office."
 github="https://github.com/britneywwc/gpt3-writer-starter"
 +++
 

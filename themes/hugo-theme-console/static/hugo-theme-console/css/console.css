@@ -327,3 +327,8 @@ code {
 .project-image img {
     border-radius: 8px;
 }
+
+.education p:first-child,
+.achievements p:first-child {
+    margin-bottom: 0;
+}

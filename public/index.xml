@@ -62,7 +62,7 @@
       <link>http://localhost:1313/projects/intrepidus/</link>
       <pubDate>Wed, 15 Jan 2020 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/intrepidus/</guid>
-      <description>&lt;p&gt;Short description of the project shown in the listing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt; &lt;p&gt;More comprehensive information about the project appears here when accessed directly.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt; &lt;ul&gt;&#xA;&lt;li&gt;Feature 1&lt;/li&gt;&#xA;&lt;li&gt;Feature 2&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Intrepidus is the optimal companion for an astronaut in space.&lt;/p&gt;&#xA;&lt;p&gt;Simply enter details like whether you are a morning or night person, the times you will dock and undock at the International Space Station, and your console shifts and Intrepidus will generate a personalised sleep schedule, meal plans and daily exercise plans for you in seconds!&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;deep sleep in deep space, our &lt;a href=&#34;https://2020.spaceappschallenge.org/challenges/sustain/sleep-shift-scheduling-tool/teams/intrepidus/project/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;submission for NASA Space Apps 2020&lt;/a&gt; &lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Tech stack: &lt;code&gt;Flutter, Dart, Firebase&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Associate Software Engineer @ Canonical</title>
