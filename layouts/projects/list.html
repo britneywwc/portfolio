@@ -6,12 +6,9 @@
       <div class="projects-list">
         {{ range .Pages }}
           <div class="project-item">
-            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <h2 style="margin-bottom: 0;"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             <p>
               {{ .Params.description }}
-              {{ if .Params.github }}
-                <a href="{{ .Params.github }}" target="_blank">🐙</a>
-              {{ end }}
             </p>
           </div>
         {{ end }}

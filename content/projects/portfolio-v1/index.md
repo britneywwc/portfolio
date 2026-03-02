@@ -2,15 +2,20 @@
 title = "Portfolio 1.0"
 date = 2022-01-15
 draft = false
+type = "projects"
 description="Personal portfolio website that displays current and existing work. Built on React."
 github="https://github.com/britneywwc/portfolio-archive"
+demo="https://britneywwc.github.io/portfolio-archive"
 +++
 
-Short description of the project shown in the listing.
+This is an archived portfolio website that displayed current and existing work. 
 
-## Overview
-More comprehensive information about the project appears here when accessed directly.
+It displayed full-stack web skills, projects worked on and contact details. 
 
-## Features
-- Feature 1
-- Feature 2
+Tech stack: `React, Javascript, Vercel, MaterialUI`
+
+{{< figure 
+  src="/images/portfolio-v1.png" 
+  alt="Landing page of archived portfolio website" 
+  class="project-image"
+>}}

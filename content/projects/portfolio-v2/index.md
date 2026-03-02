@@ -6,11 +6,12 @@ description="The current portfolio website you're seeing."
 github="https://github.com/britneywwc/portfolio"
 +++
 
-Short description of the project shown in the listing.
+This project is the current portfolio website you're seeing. 
 
-## Overview
-More comprehensive information about the project appears here when accessed directly.
+It is inspired by my interest in Go, which led me to [Hugo](https://gohugo.io/) 
 
-## Features
-- Feature 1
-- Feature 2
+I came across Hugo while reading [Powerful Command-Line Applications in Go](https://pragprog.com/titles/rggo/powerful-command-line-applications-in-go/) and [Learning Go](https://www.oreilly.com/library/view/learning-go/9781492077206/)
+
+It is built with the [Console Theme](https://github.com/mrmierzejewski/hugo-theme-console/?tab=readme-ov-file)
+
+Tech stack: `Hugo, Vercel`

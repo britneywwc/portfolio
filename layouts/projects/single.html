@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <h1 style="margin: 0;">{{ .Title }}</h1>
+    <div style="display: flex; gap: 10px;">
+      {{ if .Params.demo }}
+      <p style="margin: 0;">
+        <a href="{{ .Params.demo }}" target="_blank">
+          Demo
+        </a>
+      </p>|
+      {{ end }}
+      {{ if .Params.github }}
+      <p style="margin: 0;">
+        <a href="{{ .Params.github }}" target="_blank">
+          GitHub
+        </a>
+      </p>
+      {{ end }}
+    </div>
+  </div>
+
+  {{ .Content }}
+
+{{ end }}

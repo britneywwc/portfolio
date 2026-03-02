@@ -6,11 +6,12 @@ description = "A chat bot of Michael Scott from the mockumentary series, The Off
 github="https://github.com/britneywwc/gpt3-writer-starter"
 +++
 
-Short description of the project shown in the listing.
+Michael Scott is a character played in a comedy show, The Office. This chat bot simulates Michael's responses with the use of GPT-3. It is accesible both via a web app and Chrome extension.
 
-## Overview
-More comprehensive information about the project appears here when accessed directly.
+Tech stack: `React, Next, Javascript, GPT-3`
 
-## Features
-- Feature 1
-- Feature 2
+{{< figure 
+  src="/images/ms-gpt3.png" 
+  alt="Landing page of Michael Scott GPT-3 project" 
+  class="project-image"
+>}}

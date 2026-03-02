@@ -212,6 +212,18 @@ figure {
     );
 }
 
+code {
+    padding: 0 6px;
+
+    &::after {
+        content: none;
+    }
+
+    &::before {
+        content: none;
+    }
+}
+
 .terminal-prompt::after {
     -webkit-animation: cursor 1s infinite;
     animation: cursor 1s infinite;
@@ -310,4 +322,8 @@ figure {
         margin-top: 50px;
         padding-top: 5px;
     }
+}
+
+.project-image img {
+    border-radius: 8px;
 }

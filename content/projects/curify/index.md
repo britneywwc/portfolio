@@ -1,16 +1,41 @@
 +++
 title = "Curify"
-date = 2022-01-15
+date = 2023-01-15
 draft = false
 description="Curify generates a list of curated Netflix shows and movies based on users’ own selected Spotify playlist."
 github="https://github.com/Apple-Piethon/curify"
 +++
 
-Short description of the project shown in the listing.
+Curify is a web application that personally curates Netflix watch list based on user's Spotify playlist. 
 
-## Overview
-More comprehensive information about the project appears here when accessed directly.
+Tech stack: `ReactJS, Spotify API, Figma, Railway`
 
-## Features
-- Feature 1
-- Feature 2
+{{< figure 
+  src="/images/curify/landing.png" 
+  alt="Landing page of Curify" 
+  class="project-image"
+>}}
+
+{{< figure 
+  src="/images/curify/moodpick.png" 
+  alt="Curify mood selection page" 
+  class="project-image"
+>}}
+
+{{< figure 
+  src="/images/curify/playlistpick.png" 
+  alt="Curify playlist selection page" 
+  class="project-image"
+>}}
+
+{{< figure 
+  src="/images/curify/loading.png" 
+  alt="Curify loading page" 
+  class="project-image"
+>}}
+
+{{< figure 
+  src="/images/curify/results.png" 
+  alt="Curify results page" 
+  class="project-image"
+>}}

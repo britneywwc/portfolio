@@ -1,4 +1,4 @@
-baseurl = "http://localhost:1313/"
+baseurl = "https://www.britneywang.com/"
 title = "britney-wang"
 theme = "hugo-theme-console"
 languageCode = "en-us"
@@ -15,9 +15,9 @@ languageCode = "en-us"
   animateStyle = "animated zoomIn fast" 
 
   [[params.navlinks]]
-  name = "resume/"
-  url = "resume/"
+    name = "projects/"
+    url = "projects/"
 
   [[params.navlinks]]
-  name = "projects/"
-  url = "projects/"
+  name = "resume/"
+  url = "resume/"  
