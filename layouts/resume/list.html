@@ -8,7 +8,7 @@
   {{ $work := .Site.GetPage "resume/work-experience" }}
   {{ with $work }}
     <h1>Work Experience</h1>
-    <div class="posts-list">
+    <div class="posts-list list-items">
       {{ range (sort .Pages "Params.start_date" "desc") }}
         <div class="post">
           <div class="date">
@@ -29,7 +29,7 @@
   {{ $education := .Site.GetPage "resume/education" }}
   {{ with $education }}
     <h1>Education</h1>
-    <section class="education">
+    <section class="list-items">
       {{ .Content }}
     </section>
   {{ end }}
@@ -37,7 +37,7 @@
   {{ $achievements := .Site.GetPage "resume/achievements" }}
   {{ with $achievements }}
     <h1>Achievements</h1>
-    <section class="achievements">
+    <section class="list-items">
       {{ .Content }}
     </section>
   {{ end }}

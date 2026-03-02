@@ -4,27 +4,6 @@
     <p>{{ .Content }}</p>
   </section>
 
-  {{ $work := .Site.GetPage "resume/work-experience" }}
-  {{ with $work }}
-    <h1>Work Experience</h1>
-    <div class="posts-list">
-      {{ range (sort .Pages "Params.start_date" "desc") }}
-        <div class="post">
-          <div class="date">
-            {{ .Params.start_date | time.Format "Jan 2006" }} - 
-            {{ if .Params.end_date }}
-              {{ .Params.end_date | time.Format "Jan 2006" }}
-            {{ else }}
-              Present
-            {{ end }}
-          </div>
-          <h2>{{ .Title }}</h2>
-          {{ .Content }}
-        </div>
-      {{ end }}
-    </div>
-  {{ end }}
-
   {{ $projects := .Site.GetPage "projects" }}
   {{ with $projects }}
     <h1>Projects</h1>
@@ -44,6 +23,27 @@
         {{ end }}
       </div>
     {{ end }}
+  {{ end }}
+
+  {{ $work := .Site.GetPage "resume/work-experience" }}
+  {{ with $work }}
+    <h1>Work Experience</h1>
+    <div class="posts-list">
+      {{ range (sort .Pages "Params.start_date" "desc") }}
+        <div class="post list-items">
+          <div class="date">
+            {{ .Params.start_date | time.Format "Jan 2006" }} - 
+            {{ if .Params.end_date }}
+              {{ .Params.end_date | time.Format "Jan 2006" }}
+            {{ else }}
+              Present
+            {{ end }}
+          </div>
+          <h2>{{ .Title }}</h2>
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
   {{ end }}
   
 {{ end }}

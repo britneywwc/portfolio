@@ -4,6 +4,13 @@
     
         
         <url>
+            <loc>http://localhost:1313/bookshelf/</loc>
+            <lastmod>2026-03-02T18:26:53+08:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
             <loc>http://localhost:1313/</loc>
             <lastmod>2026-02-28T16:30:08+08:00</lastmod>
         </url>
@@ -33,6 +40,13 @@
         
         <url>
             <loc>http://localhost:1313/projects/portfolio-v2/</loc>
+            <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:1313/projects/</loc>
             <lastmod>2026-02-01T00:00:00+00:00</lastmod>
         </url>
         
@@ -99,12 +113,6 @@
         
         <url>
             <loc>http://localhost:1313/resume/education/</loc>
-        </url>
-        
-    
-        
-        <url>
-            <loc>http://localhost:1313/projects/</loc>
         </url>
         
     

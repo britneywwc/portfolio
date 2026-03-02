@@ -328,7 +328,10 @@ code {
     border-radius: 8px;
 }
 
-.education p:first-child,
-.achievements p:first-child {
+.list-items h2,
+.list-items p {
     margin-bottom: 0;
+}
+.list-items ul {
+    margin-top: 0;
 }
