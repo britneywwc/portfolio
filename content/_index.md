@@ -9,7 +9,7 @@ Currently a **Software Engineer @ Canonical**. [(more)](/resume)
 
 ```python {lineNos=inline tabWidth=2}
 languages = ["python", "go", "javascript", "html", "scss"]
-frameworks = ["react", "flask""]
+frameworks = ["react", "flask"]
 tools = ["hugo", "jinja", "postgresql"]
 devops = ["docker", "kubernetes", "jenkins"]
 ```

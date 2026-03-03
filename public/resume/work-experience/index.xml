@@ -12,7 +12,7 @@
       <link>http://localhost:1313/resume/work-experience/swe-associate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/resume/work-experience/swe-associate/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;Implemented dark theme components, integrated on Ubuntu Pro Support Portal for dual theme support&lt;/li&gt;&#xA;&lt;li&gt;Added support ticket and comment features through SalesForce API and Chatter&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Implemented dark theme components, integrated on Ubuntu Pro Support Portal for dual theme support&lt;/li&gt;&#xA;&lt;li&gt;Upstreamed themed components on the Vanilla Framework&lt;/li&gt;&#xA;&lt;li&gt;Added support ticket and comment features through SalesForce API and Chatter&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Developer Intern @ Configura</title>
@@ -26,14 +26,14 @@
       <link>http://localhost:1313/resume/work-experience/swe-i/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/resume/work-experience/swe-i/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;Automated testing for Python, Javascript and Marketo forms.&lt;/li&gt;&#xA;&lt;li&gt;Migrated case study platform, optimised SQL queries&lt;/li&gt;&#xA;&lt;li&gt;Chair of Social Working Group, organising programmes that support team cohesion and&#xA;and social impact across 60+ distributed team members&lt;/li&gt;&#xA;&lt;li&gt;3x Recognition Award recipient for cross-team collaboration&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Shipped open source tools i.e directory parser, cookie policy that are used across Sites&lt;/li&gt;&#xA;&lt;li&gt;Automated testing for Python, Javascript and Marketo forms to reduce lead loss&lt;/li&gt;&#xA;&lt;li&gt;Implemented CI/CD automation with GitHub Actions including automated sitemap generation and form generator&lt;/li&gt;&#xA;&lt;li&gt;Integrated TIOBE index tracking for codebase quality monitoring&lt;/li&gt;&#xA;&lt;li&gt;Developed Jinja2 macro-based templating system to improve DevX on page creation&lt;/li&gt;&#xA;&lt;li&gt;Mentored junior engineers on development best practices&lt;/li&gt;&#xA;&lt;li&gt;Chair of Social Working Group, organising programmes that support team cohesion and social impact across 60+ distributed team members&lt;/li&gt;&#xA;&lt;li&gt;3x Recognition Award recipient&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Software Engineer Intern @ PostCo</title>
       <link>http://localhost:1313/resume/work-experience/intern-swe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/resume/work-experience/intern-swe/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;Implemented dark theme components, integrated on Ubuntu Pro Support Portal for dual theme support&lt;/li&gt;&#xA;&lt;li&gt;Added support ticket and comment features through SalesForce API and Chatter&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Developed features to the existing web application checkout page using React, TypeScript and Ruby on Rails&lt;/li&gt;&#xA;&lt;li&gt;Collaborated with the Operations team to query Darkstores orders with SQL and&#xA;Airtable&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>britney-wang/tags/</title>
-    <meta name="description" content="Software engineer portfolio">
+    <meta name="description" content="Britney Wang&#39;s Software Engineer portfolio website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
@@ -25,7 +25,7 @@
 
 
 <meta name="twitter:title" content="Tags"/>
-<meta name="twitter:description" content="Software engineer portfolio"/>
+<meta name="twitter:description" content="Britney Wang&#39;s Software Engineer portfolio website"/>
 
 </head>
 <body class="terminal">
@@ -204,11 +204,14 @@
           </div>
           <h2>Software Engineer I @ Canonical</h2>
           <ul>
-<li>Automated testing for Python, Javascript and Marketo forms.</li>
-<li>Migrated case study platform, optimised SQL queries</li>
-<li>Chair of Social Working Group, organising programmes that support team cohesion and
-and social impact across 60+ distributed team members</li>
-<li>3x Recognition Award recipient for cross-team collaboration</li>
+<li>Shipped open source tools i.e directory parser, cookie policy that are used across Sites</li>
+<li>Automated testing for Python, Javascript and Marketo forms to reduce lead loss</li>
+<li>Implemented CI/CD automation with GitHub Actions including automated sitemap generation and form generator</li>
+<li>Integrated TIOBE index tracking for codebase quality monitoring</li>
+<li>Developed Jinja2 macro-based templating system to improve DevX on page creation</li>
+<li>Mentored junior engineers on development best practices</li>
+<li>Chair of Social Working Group, organising programmes that support team cohesion and social impact across 60+ distributed team members</li>
+<li>3x Recognition Award recipient</li>
 </ul>
 
         </div>
@@ -223,6 +226,7 @@ and social impact across 60+ distributed team members</li>
           <h2>Associate Software Engineer @ Canonical</h2>
           <ul>
 <li>Implemented dark theme components, integrated on Ubuntu Pro Support Portal for dual theme support</li>
+<li>Upstreamed themed components on the Vanilla Framework</li>
 <li>Added support ticket and comment features through SalesForce API and Chatter</li>
 </ul>
 
@@ -254,8 +258,9 @@ CET minor build versions using Jira and Test Rails</li>
           </div>
           <h2>Software Engineer Intern @ PostCo</h2>
           <ul>
-<li>Implemented dark theme components, integrated on Ubuntu Pro Support Portal for dual theme support</li>
-<li>Added support ticket and comment features through SalesForce API and Chatter</li>
+<li>Developed features to the existing web application checkout page using React, TypeScript and Ruby on Rails</li>
+<li>Collaborated with the Operations team to query Darkstores orders with SQL and
+Airtable</li>
 </ul>
 
         </div>
@@ -263,6 +268,409 @@ CET minor build versions using Jira and Test Rails</li>
     </div>
   
   
+  
+
+<section class="ascii-cat-section">
+  <div class="ascii-cat-container">
+    <div class="terminal-bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-title">cat.gif</span>
+    </div>
+    <div class="ascii-stage">
+      <canvas id="asciiCat" aria-label="ASCII cat — click to feed"></canvas>
+      <div class="scanline"></div>
+    </div>
+    <div class="ascii-footer">
+      <button class="feed-btn" id="feedBtn" onclick="feedTheCat()">
+        🐟 Feed the cat
+      </button>
+      <span class="hunger-label" id="hungerLabel">hungry...</span>
+    </div>
+  </div>
+</section>
+
+<style>
+  .ascii-cat-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .ascii-cat-container {
+    border: 1px solid #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 1px #222,
+      0 0 30px rgba(0,255,100,0.05),
+      0 0 60px rgba(0,255,100,0.03);
+    background: #0d0d0d;
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .terminal-bar {
+    background: #161616;
+    border-bottom: 1px solid #1f1f1f;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+  .dot.red    { background: #ff5f57; }
+  .dot.yellow { background: #febc2e; }
+  .dot.green  { background: #28c840; }
+
+  .terminal-title {
+    color: #444;
+    font-size: 0.72rem;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.05em;
+  }
+
+  .ascii-stage {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    animation: flicker 9s infinite;
+  }
+
+  #asciiCat { display: block; width: 100%; }
+
+  .scanline {
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0px, transparent 3px,
+      rgba(0,0,0,0.09) 3px, rgba(0,0,0,0.09) 4px
+    );
+    pointer-events: none; z-index: 2;
+  }
+
+  @keyframes flicker {
+    0%,96%,100% { opacity:1; }
+    97%          { opacity:0.88; }
+    98%          { opacity:0.95; }
+    99%          { opacity:0.91; }
+  }
+
+   
+  .ascii-footer {
+    background: #111;
+    border-top: 1px solid #1a1a1a;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .feed-btn {
+    background: transparent;
+    border: 1px solid #00ff64;
+    color: #00ff64;
+    font-family: 'Courier New', monospace;
+    font-size: 0.78rem;
+    padding: 5px 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+    text-shadow: 0 0 6px rgba(0,255,100,0.5);
+  }
+  .feed-btn:hover {
+    background: rgba(0,255,100,0.08);
+    box-shadow: 0 0 10px rgba(0,255,100,0.2);
+  }
+  .feed-btn:active {
+    background: rgba(0,255,100,0.18);
+  }
+  .feed-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+    box-shadow: none;
+  }
+
+  .hunger-label {
+    color: #2a6644;
+    font-size: 0.70rem;
+    letter-spacing: 0.08em;
+    transition: color 0.4s;
+  }
+  .hunger-label.happy { color: #00ff64; text-shadow: 0 0 8px rgba(0,255,100,0.5); }
+</style>
+
+<script>
+(function () {
+  const canvas = document.getElementById('asciiCat');
+  if (!canvas) return;
+  const ctx    = canvas.getContext('2d');
+
+  const FONT_SIZE = 13;
+  const FONT      = `${FONT_SIZE}px "Courier New", monospace`;
+  const LINE_H    = Math.round(FONT_SIZE * 1.38);
+  const COLOR     = '#00ff64';
+  const SHADOW    = 'rgba(0,255,100,0.55)';
+  const BG        = '#0d0d0d';
+
+  
+
+  
+  const framesIdle = [
+    [' /\\_/\\  ',
+     '( o.o ) ',
+     ' > ^ <  ',
+     ' (___)  ',
+     '         '],
+    [' /\\_/\\  ',
+     '( -.o ) ',
+     ' > ^ <  ',
+     ' (___)  ',
+     '         '],
+  ];
+
+  
+  const framesBeg = [
+    [' /\\_/\\  ',
+     '( ^.^ ) ',
+     ' (   )  ',
+     ' |   |  ',
+     '  ~~~   '],
+    [' /\\_/\\  ',
+     '( *w* ) ',
+     ' (   )  ',
+     ' |   |  ',
+     '  ~~~   '],
+  ];
+
+  
+  const framesEat = [
+    [' /\\_/\\  ',
+     '( >w< ) ',
+     '  nom   ',
+     ' (___)  ',
+     '  🐟    '],
+    [' /\\_/\\  ',
+     '( >w< ) ',
+     '  NOM   ',
+     ' (___)  ',
+     '  🐡    '],
+    [' /\\_/\\  ',
+     '( =w= ) ',
+     '  nom~  ',
+     ' (___)  ',
+     '        '],
+    [' /\\_/\\  ',
+     '( ^w^ ) ',
+     '  mmm   ',
+     ' (___)  ',
+     '        '],
+  ];
+
+  
+  const framesHappy = [
+    [' /\\_/\\  ',
+     '( ♥w♥ ) ',
+     '  \\o/   ',
+     '  /|\\   ',
+     '  / \\   '],
+    [' /\\_/\\  ',
+     '( ♥w♥ ) ',
+     '   o/   ',
+     '  /|    ',
+     '  /     '],
+    [' /\\_/\\  ',
+     '( ♥w♥ ) ',
+     '  \\o    ',
+     '   |\\   ',
+     '     \\  '],
+    [' /\\_/\\  ',
+     '( ^w^ ) ',
+     '  purr  ',
+     ' (___)  ',
+     '        '],
+    [' /\\_/\\  ',
+     '( -w- ) ',
+     '  purr~ ',
+     ' (___)  ',
+     '        '],
+  ];
+
+  
+  const framesSleep = [
+    [' /\\_/\\  ',
+     '( -.- ) ',
+     '  zzz   ',
+     ' (___)  ',
+     '        '],
+    [' /\\_/\\  ',
+     '( -.- ) ',
+     '  Zzz   ',
+     ' (___)  ',
+     '        '],
+  ];
+
+  
+  ctx.font = FONT;
+  const charW    = ctx.measureText('M').width;
+  const CANVAS_W = Math.round(charW * 54);
+  const CANVAS_H = LINE_H * 9;
+
+  canvas.width  = CANVAS_W;
+  canvas.height = CANVAS_H;
+  canvas.style.height = Math.round(CANVAS_H * (canvas.offsetWidth / CANVAS_W)) + 'px';
+
+  const CAT_X    = Math.round(CANVAS_W / 2 - charW * 4);
+  const GROUND_Y = CANVAS_H - LINE_H * 1.2;
+
+  
+  let fish = null;   
+
+  
+  
+  let phase     = 'idle';
+  let frameIdx  = 0;
+  let timer     = null;
+
+  const SPEEDS = { idle:520, beg:220, eat:180, happy:150, sleep:600 };
+
+  
+  function drawFrame() {
+    const sets = { idle:framesIdle, beg:framesBeg, eat:framesEat, happy:framesHappy, sleep:framesSleep };
+    const frames = sets[phase];
+    const lines  = frames[frameIdx % frames.length];
+
+    ctx.fillStyle = BG;
+    ctx.fillRect(0, 0, CANVAS_W, CANVAS_H);
+
+    
+    ctx.strokeStyle = 'rgba(0,255,100,0.08)';
+    ctx.lineWidth   = 1;
+    ctx.beginPath();
+    ctx.moveTo(0, GROUND_Y + LINE_H * 0.4);
+    ctx.lineTo(CANVAS_W, GROUND_Y + LINE_H * 0.4);
+    ctx.stroke();
+
+    
+    if (fish && fish.active) {
+      ctx.font      = `${Math.round(FONT_SIZE * 1.5)}px serif`;
+      ctx.fillStyle = COLOR;
+      ctx.shadowColor = SHADOW;
+      ctx.shadowBlur  = 8;
+      ctx.fillText('🐟', fish.x, fish.y);
+      ctx.shadowBlur = 0;
+      ctx.font = FONT;
+    }
+
+    
+    ctx.font        = FONT;
+    ctx.fillStyle   = COLOR;
+    ctx.shadowColor = SHADOW;
+    ctx.shadowBlur  = 7;
+
+    const topY = GROUND_Y - (lines.length - 1) * LINE_H;
+    lines.forEach((line, i) => {
+      ctx.fillText(line, CAT_X, topY + i * LINE_H);
+    });
+    ctx.shadowBlur = 0;
+  }
+
+  
+  function launchFish() {
+    fish = { x: CANVAS_W + 20, y: GROUND_Y - LINE_H * 2, active: true };
+
+    function moveFish() {
+      if (!fish.active) return;
+      fish.x -= 8;
+      drawFrame();
+
+      if (fish.x <= CAT_X + charW * 6) {
+        
+        fish.active = false;
+        setPhase('eat');
+      } else {
+        requestAnimationFrame(moveFish);
+      }
+    }
+    requestAnimationFrame(moveFish);
+  }
+
+  
+  function setPhase(newPhase) {
+    clearTimeout(timer);
+    phase    = newPhase;
+    frameIdx = 0;
+    loop();
+  }
+
+  function loop() {
+    drawFrame();
+    frameIdx++;
+
+    const frames = { idle:framesIdle, beg:framesBeg, eat:framesEat, happy:framesHappy, sleep:framesSleep }[phase];
+    const speed  = SPEEDS[phase];
+
+    if (phase === 'eat' && frameIdx >= frames.length * 2) {
+      setPhase('happy'); return;
+    }
+    if (phase === 'happy' && frameIdx >= frames.length * 4) {
+      setPhase('sleep');
+      updateLabel('full & happy~ ♥', true);
+      enableBtn();
+      return;
+    }
+    if (phase === 'sleep' && frameIdx >= frames.length * 6) {
+      setPhase('idle');
+      updateLabel('hungry...', false);
+      return;
+    }
+
+    timer = setTimeout(loop, speed);
+  }
+
+  
+  const btn   = document.getElementById('feedBtn');
+  const label = document.getElementById('hungerLabel');
+
+  function updateLabel(text, happy) {
+    if (!label) return;
+    label.textContent = text;
+    label.className   = 'hunger-label' + (happy ? ' happy' : '');
+  }
+
+  function enableBtn() {
+    if (btn) btn.disabled = false;
+  }
+
+  
+  window.feedTheCat = function () {
+    if (phase !== 'idle' && phase !== 'sleep') return;
+    if (btn) btn.disabled = true;
+    updateLabel('ooh, a fish! ♥', true);
+    setPhase('beg');
+
+    
+    setTimeout(() => {
+      clearTimeout(timer);
+      launchFish();
+    }, 900);
+  };
+
+  
+  loop();
+
+  window.addEventListener('resize', () => {
+    canvas.style.height = Math.round(CANVAS_H * (canvas.offsetWidth / CANVAS_W)) + 'px';
+  });
+})();
+</script>
+
 
         <div class="footer" style="display: flex; justify-content: space-between; align-items: center;">
     <div>Built with 🐱☕️❤️</div>
