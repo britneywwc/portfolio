@@ -19,7 +19,7 @@
       <link>http://localhost:1313/resume/work-experience/intern-dev/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/resume/work-experience/intern-dev/</guid>
-      <description>&lt;ul&gt;&#xA;&lt;li&gt;Implemented dark theme components, integrated on Ubuntu Pro Support Portal for dual theme support&lt;/li&gt;&#xA;&lt;li&gt;Added support ticket and comment features through SalesForce API and Chatter&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Developed a constraint-solver algorithm with linear programming practices to&#xA;improve CET Designer’s UI/UX using in-house language, Configura Magick (CM)&lt;/li&gt;&#xA;&lt;li&gt;Collaborated with the QA team to complete on-call tasks and regression testing on&#xA;CET minor build versions using Jira and Test Rails&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Software Engineer I @ Canonical</title>
