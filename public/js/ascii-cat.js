@@ -255,7 +255,7 @@
         clearInterval(fishTimer);
         setPhase('eat');
       }
-    }, 40);
+    }, 60);
   }
 
   // ── UI helpers ────────────────────────────────────────────────
