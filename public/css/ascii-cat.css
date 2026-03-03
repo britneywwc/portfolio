@@ -48,6 +48,10 @@
   animation: flicker 9s infinite;
 }
 
+.ascii-stage pre {
+  background-color: unset;
+}
+
 #asciiCat {
   margin: 0;
   padding: 0;
@@ -63,6 +67,7 @@
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
+
 
 .scanline {
   position: absolute; inset: 0;
