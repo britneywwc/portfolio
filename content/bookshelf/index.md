@@ -16,6 +16,9 @@ title = 'Bookshelf'
 - [Tidy First?](https://www.oreilly.com/library/view/tidy-first/9798341643932/)
 - [Street Coder](https://www.oreilly.com/library/view/street-coder/9781617298370/)
 
+## AI
+- [AI Engineering](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
+
 ## Python
 - [Python Testing with pytest](https://www.oreilly.com/library/view/python-testing-with/9781680509427/)
 
